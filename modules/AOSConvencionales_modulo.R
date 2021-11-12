@@ -28,8 +28,15 @@ AOSensoresConvencionalesUI = function(id) {
                                br(),
                                tabsetPanel(
                                  tabPanel(strong("Tabla Anual"),
-                                          setDownTable("Cantidad de datos o días de la variable de interés en DHIME por año",ns("tabla4"),ns("downloadTabla4"),titleStatic = TRUE)
-                                 ),
+                                          br(),
+                                          tabsetPanel(
+                                            tabPanel(strong("Conteos"),
+                                                     setDownTable("Cantidad de datos o días de la variable de interés en DHIME por año",ns("tabla4"),ns("downloadTabla4"),titleStatic = TRUE)
+                                            ),
+                                            tabPanel(strong("Porcentajes"),
+                                                     setDownTable("Cantidad de porcentajes de datos o días de la variable de interés en DHIME por año",ns("tabla45"),ns("downloadTabla45"),titleStatic = TRUE)
+                                            )
+                                          )                                 ),
                                  tabPanel(strong("Tabla Mensual"),
                                           filtroAnios(ns('anio4'), 'AÑO'),
                                           setDownTable("Cantidad de datos o días de la variable de interés en DHIME por mes",ns("tablaY"),ns("downloadTablaY"),titleStatic = TRUE)
@@ -128,6 +135,16 @@ AOSensoresConvencionales = function(input, output, session) {
   })
   output$tabla4 = renderDataTable({datatable(TABLA_D(),options = list(scrollX = T,pageLength = 25),rownames = F)})
   output$downloadTabla4 <- downloadButtonTable(TABLA_D())
+  
+  TABLA_LL = reactive({
+    TABLA_LL = TABLA_45 %>% filter(CodigoEstacion == input$selEstacion)
+    TABLA_LL$anio = NULL
+    TABLA_LL$AREA_OPERATIVA = NULL
+    TABLA_LL$CodigoEstacion = NULL
+    TABLA_LL
+  })
+  output$tabla45 = renderDataTable({datatable(TABLA_LL(),options = list(scrollX = T,pageLength = 25),rownames = F)})
+  output$downloadTabla45 <- downloadButtonTable(TABLA_LL())
   
   TABLA_F = reactive({
     TABLA_F = TABLA_Y %>% filter(CodigoEstacion == input$selEstacion & anio == input$anio4)

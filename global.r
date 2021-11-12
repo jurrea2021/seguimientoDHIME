@@ -187,6 +187,8 @@ print(13)
 ############ Analisis para la generacion de la tabla de cantidad de datos anuales por estaciones ##############
 load(paste0(RUTA,"ConsolidadoConteoAnualEstacion.RData"))
 TABLA_4 = ConsolidadoConteoAnualEstacion; rm(ConsolidadoConteoAnualEstacion)
+load(paste0(RUTA,"ConsolidadoPorcAnualEstacion.RData"))
+TABLA_45 = RESUMEN_CONTEO_EST1; rm(RESUMEN_CONTEO_EST1)
 print(14)
 ############ Analisis para la generación de la tabla de cantidad de datos mensuales por estaciones ##############
 load(paste0(RUTA,"ConsolidadoConteoMesEstacion.RData"))

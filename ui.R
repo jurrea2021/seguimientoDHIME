@@ -44,7 +44,8 @@ shinyUI(fluidPage(
              br(),
              fluidRow(
                p("La herramienta propuesta facilita el análisis estadístico descriptivo por medio de gráficas, tablas y mapas para algunas de las etiquetas básicas de DHIME más representativas:
-                 PTPM_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2010")," hasta el", strong(" 8 de noviembre de 2021"),". La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
+                 PTPM_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2010")," hasta el", strong(" 8 de noviembre de 2021"),". 
+                 El Catálogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la página del Instituto el 11 de Noviembre de 2021. La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
                br()
                # p("La herramienta se compone de 5 módulos lo cuáles se explican a continuación:")
              ),
@@ -138,7 +139,7 @@ shinyUI(fluidPage(
   ##############Footer----    
   ###############################################.
   #Copyright warning
-  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v5.0 2021", 
+  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v6.0 2021", 
               style = "
               position:fixed;
               text-align:center;
