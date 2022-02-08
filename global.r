@@ -4,18 +4,24 @@
 
 # Ajustar las rutas locales en las líneas de código 20
 
-packs = c("leaflet","sf","dplyr","raster","plotly","rgdal","mapview","leafem","readxl","shinydashboard","stringr","tidyr","dygraphs","xts","DT","leaflet.extras","bslib","shinythemes","shinyalert","RSQLite")
+install.packages(setdiff('terra', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
+install.packages(setdiff('raster', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
+
+packs = c("mapview","leaflet","sf","dplyr","plotly","rgdal","leafem","readxl","shinydashboard","stringr","tidyr","dygraphs","xts","DT","leaflet.extras","bslib","shinythemes","shinyalert","RSQLite")
 install.packages(setdiff(packs, rownames(installed.packages()))) 
 
 library(leaflet)
+library(raster)
 library(sf)
 library(dplyr)
-library(raster)
+try(library(raster),silent = T)
 library(plotly)
 library(rgdal)
 library(readxl)
 library(stringr)
-library(tidyr);library(mapview);library(leafem)
+library(tidyr);
+try(library(mapview),silent = T);
+try(library(leafem),silent = T)
 library(dygraphs);library(shinydashboard)
 library(xts);library(DT);library(shinyalert);library(RSQLite)
 library(leaflet.extras);library(bslib);library(shinythemes)
@@ -49,6 +55,7 @@ SubRegs$NOM_SUBREG = iconv(SubRegs$NOM_SUBREG,from = "UTF-8", to = "latin1")
 #catalogos
 CNE_IDEAM = read_excel(paste0(RUTA,"CNE_IDEAM.xls"),sheet = 1)
 CNE_OE = read_excel(paste0(RUTA,"CNE_OE.xls"),sheet = 1)
+CNE_IDEAM$subred = NULL
 CNE_IDEAM = as.data.frame(CNE_IDEAM)
 CNE_OE = as.data.frame(CNE_OE)
 CNE_IDEAM$FUENTE = "CNE_IDEAM"
