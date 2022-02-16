@@ -105,7 +105,7 @@ shinyUI(fluidPage(
              fluidRow(
                hr(),
                p(em("Desarrollado por:"),em("Julián David Urrea Urrego (Ingeniero Ambiental | Especialista SIG)"),style="text-align:center; font-family: times"),
-               p(em("CTO. 501-2020 | IDEAM-Planeación Operativa"),style="text-align:center; font-family: times")
+               p(em("CTO. 064-2022 | IDEAM-Planeación Operativa"),style="text-align:center; font-family: times")
                
              )
              ),
@@ -139,7 +139,7 @@ shinyUI(fluidPage(
   ##############Footer----    
   ###############################################.
   #Copyright warning
-  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v6.0 2021", 
+  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v7.0 2022", 
               style = "
               position:fixed;
               text-align:center;
