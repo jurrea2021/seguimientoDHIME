@@ -36,6 +36,8 @@ server <- function(input, output, session) {
   
   moduleServer("modulo_coordErroneas",coordErroneas)
   
+  moduleServer("modulo_TSDHIME",TSetiqDHIME)
+  
   
 #############################################################################################################################  
   
@@ -67,6 +69,10 @@ server <- function(input, output, session) {
   observeEvent(input$jumpToP7, {
     updateTabsetPanel(session, "inTabset",
                       selected = "panel7")
+  })
+  observeEvent(input$jumpToP10, {
+    updateTabsetPanel(session, "inTabset",
+                      selected = "panel10")
   })
   observeEvent(input$principal, {
     # Show a modal when the button is pressed

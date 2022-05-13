@@ -40,6 +40,7 @@ source("./modules/AOSaut_PT_AUT_10_modulo.R",encoding = "UTF-8")
 source("./modules/AOSaut_NV_AUT_60_modulo.R",encoding = "UTF-8")
 source("./modules/seriesHistoricas_modulo.R",encoding = "UTF-8")
 source("./modules/coordErroneas_modulo.R",encoding = "UTF-8")
+source("./modules/TSetiqDHIME_modulo.R",encoding = "UTF-8")
 
 print("modulos...")
 # conn <- dbConnect(RSQLite::SQLite(), paste0(RUTA,"HIST_PTPM_CON.db"))
@@ -301,4 +302,8 @@ print(27)
 # xts_uno = xts::xts(HIST_PTPM$Valor,order.by = HIST_PTPM$Fecha,frequency = 365)
 # aaa = read.zoo(HIST_PTPM)
 # dygraph(data = aaa, main = "Serie de tiempo Prec", xlab = "Fecha", ylab = "Valor")
-  
+
+
+
+load(paste0(RUTA,"tsDHIMECom.RData"))  
+print(28)

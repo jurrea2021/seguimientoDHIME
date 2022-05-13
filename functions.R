@@ -60,6 +60,25 @@ filtroV2AreasOperativas = function(id,labelId) {
                           "Area Operativa 11" = "Area Operativa 11 - Cundinamarca-Amazonas-San Andrés"))
 }
 
+filtroParamsEtqDHIME = function(id,labelId) {
+  selectInput(id,
+              label = labelId,
+              choices = c("HUM RELATIVA" = "HUM RELATIVA","DURACION" = "DURACION","PRECIPITACION" = "PRECIPITACION",
+                          "TEMPERATURA" = "TEMPERATURA","PUNTO ROCIO" = "PUNTO ROCIO","TENSION VAPOR" = "TENSION VAPOR",        
+                          "DIR VIENTO" = "DIR VIENTO","EVAPORACION" = "EVAPORACION","FEN ATMOS" = "FEN ATMOS",
+                          "PRES ATMOS" = "PRES ATMOS","REC VIENTO" = "REC VIENTO","VEL VIENTO" = "VEL VIENTO",           
+                          "BRILLO SOLAR" = "BRILLO SOLAR","CS" = "CS","PORCENTAJE" = "PORCENTAJE",
+                          "CM" = "CM","NIVEL" = "NIVEL","CAUDAL" = "CAUDAL","TM" = "TM","PESO MUESTRA" = "PESO MUESTRA",
+                          "HUM SUELO" = "HUM SUELO","TEMP SUELO" = "TEMP SUELO","NUBOSIDAD" = "NUBOSIDAD",
+                          "ADIMENSIONAL" = "ADIMENSIONAL","RAD SOLAR" = "RAD SOLAR","ALTURA" = "ALTURA",
+                          "ANG ELEVACION" = "ANG ELEVACION","DIR NUBOSIDAD" = "DIR NUBOSIDAD","TIPO NUBOSIDAD" = "TIPO NUBOSIDAD",
+                          "VOL MUESTRA" = "VOL MUESTRA","VISIBILIDAD" = "VISIBILIDAD","RAD UV" = "RAD UV",
+                          "BRILLO SOLAR RELATIVO" = "BRILLO SOLAR RELATIVO","ESTADO SUELO" = "ESTADO SUELO",
+                          "DEUTERIO" = "DEUTERIO","OXIGENO 18" = "OXIGENO 18","TRITIO" = "TRITIO")
+  )
+}
+
+
 botonAyuda = function(id) {
   div(useShinyalert(), # Set up shinyalert
       actionButton(id, strong("Ayuda"),icon('question-circle'),style="color: #1C2322; background-color: #3BE6C4; border-color: #18BC9C"))
