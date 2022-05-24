@@ -1,0 +1,17 @@
+---
+title: "Dynamic report"
+output: pdf_document
+params: 
+  data: NA
+---
+  
+```{r}
+# The `params` object is available in the document.
+params$data
+```
+
+A plot of random points.
+
+```{r}
+knitr::kable(params$data, caption = 'A caption')
+```
