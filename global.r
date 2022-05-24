@@ -7,7 +7,7 @@
 install.packages(setdiff('terra', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
 install.packages(setdiff('raster', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
 
-packs = c("mapview","leaflet","sf","dplyr","plotly","rgdal","leafem","readxl","shinydashboard","stringr","tidyr","dygraphs","xts","DT","leaflet.extras","bslib","shinythemes","shinyalert","RSQLite","rmarkdown","knitr")
+packs = c("mapview","leaflet","sf","dplyr","plotly","rgdal","leafem","readxl","shinydashboard","stringr","tidyr","dygraphs","xts","DT","leaflet.extras","bslib","shinythemes","shinyalert","RSQLite","rmarkdown","knitr","tinytex")
 install.packages(setdiff(packs, rownames(installed.packages()))) 
 
 library(leaflet)
@@ -25,7 +25,7 @@ try(library(leafem),silent = T)
 library(dygraphs);library(shinydashboard)
 library(xts);library(DT);library(shinyalert);library(RSQLite)
 library(leaflet.extras);library(bslib);library(shinythemes);
-library(knitr);library(rmarkdown)
+library(knitr);library(rmarkdown);library(tinytex)
 
 RUTA = "data/"
 # RUTA = "C:/jurrea/CTO_501_2020/Obligaciones/02_AccionesSeguimientoInformacion/PaginasShiny/SeguimientoDHIME/data/"
