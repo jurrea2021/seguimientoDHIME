@@ -24,7 +24,8 @@ try(library(mapview),silent = T);
 try(library(leafem),silent = T)
 library(dygraphs);library(shinydashboard)
 library(xts);library(DT);library(shinyalert);library(RSQLite)
-library(leaflet.extras);library(bslib);library(shinythemes)
+library(leaflet.extras);library(bslib);library(shinythemes);
+library(knitr);library(rmarkdown)
 
 RUTA = "data/"
 # RUTA = "C:/jurrea/CTO_501_2020/Obligaciones/02_AccionesSeguimientoInformacion/PaginasShiny/SeguimientoDHIME/data/"
