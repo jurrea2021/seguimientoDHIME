@@ -9,6 +9,7 @@ AOSensoresConvencionalesUI = function(id) {
              tabPanel(strong("Consulta por Estación"),
                       fluidRow(
                         column(4,
+                               downloadButton(ns("report"), "Generate report"),
                                fluidRow(
                                  column(9,
                                         filtroV1AreasOperativas(ns("AOSCoompleto1"),"ÁREA OPERATIVA"),
@@ -230,4 +231,45 @@ AOSensoresConvencionales = function(input, output, session) {
       # addPolygons() %>%
       addCircleMarkers(data=tre,lng=tre$longitud,lat=tre$latitud,label = tre$nombre,color="#0C00FF",weight = 3,radius=10,layerId = tre$OBJECTID) 
   })
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  output$report <- downloadHandler(
+    # For PDF output, change this to "report.pdf"
+    filename = "report2.pdf",
+    content = function(file) {
+      # Copy the report file to a temporary directory before processing it, in
+      # case we don't have write permissions to the current working dir (which
+      # can happen when deployed).
+      tempReport <- file.path(tempdir(), "report2.rmd")
+      file.copy("./rmd/report2.rmd", tempReport, overwrite = TRUE)
+      
+      # Set up parameters to pass to Rmd document
+      params <- list(data = TABLA_F())
+      
+      # Knit the document, passing in the `params` list, and eval it in a
+      # child of the global environment (this isolates the code in the document
+      # from the code in this app).
+      rmarkdown::render(tempReport, output_file = file,
+                        params = params,
+                        envir = new.env(parent = globalenv())
+      )
+    }
+  )
+  
+  
+  
+  
+  
 }
