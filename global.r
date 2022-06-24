@@ -305,6 +305,6 @@ print(27)
 # dygraph(data = aaa, main = "Serie de tiempo Prec", xlab = "Fecha", ylab = "Valor")
 
 
-
+############### Archivo con el consolidado de series de DHIME ############################################
 load(paste0(RUTA,"tsDHIMECom.RData"))  
 print(28)
