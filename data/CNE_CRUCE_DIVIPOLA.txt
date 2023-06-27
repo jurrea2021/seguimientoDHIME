@@ -1,0 +1,948 @@
+MUNICIPIO	COD_CNMO
+Ipiales	52356
+Contadero	52210
+Túquerres	52838
+Mocoa	86001
+Puerto Nariño	91540
+Santander (Araracuara)	91669
+Solano	18756
+Puerres	52573
+Florencia (Caquetá)	18001
+Cumbitara	52233
+Tumaco	52835
+Pitalito	41551
+Barbacoas	52079
+Mallama (Piedrancha)	52435
+Pasto	52001
+Ricaurte (Nariño)	52612
+Puracé (Coconuco)	19585
+Taminango	52786
+Popayán	19001
+San Agustín	41668
+Saladoblanco	41660
+Balboa (Cauca)	19075
+La Sierra	19392
+San Vicente Del Caguán	18753
+Agrado	41013
+Argelia (Cauca)	19050
+Cajibío	19130
+Páez (Belalcázar)	19517
+Neiva	41001
+Guapi	19318
+López	19418
+Leticia	91001
+Pinillos	13549
+Achí	13006
+Altos Del Rosario	13030
+San Jacinto Del Cauca	13655
+San Onofre	70713
+Montecristo	13458
+Guicán	15332
+Inzá	19355
+Baraya	41078
+Florida	76275
+Cali	76001
+Jamundí	76364
+Villamaria	17873
+Buenaventura	76109
+Espinal	73268
+Cabrera (Cundinamarca)	25120
+Cunday	73226
+Roncesvalles	73622
+Puerto López	50573
+Prado	73563
+Buga	76111
+Purificación	73585
+Cajamarca	73124
+Ibagué	73001
+San Cayetano (Cundinamarca)	25653
+Pasca	25535
+Bogota, D.C	11001
+Nariño (Cundinamarca)	25483
+Inírida	94001
+Silvania	25743
+Saldaña	73671
+Natagaima	73483
+Girardot	25307
+Caicedonia	76122
+Cartago	76147
+Pereira	66001
+Ambalema	73030
+Ansermanuevo	76041
+Mosquera (Cundinamarca)	25473
+Santa Rosa De Cabal	66682
+Calarcá	63130
+Guasca	25322
+La Calera	25377
+Santa María (Boyacá)	15690
+Murillo	73461
+La Virginia	66400
+Orocué	85230
+Marsella	66440
+Armenia (Quindío)	63001
+Suesca	25772
+Ubaté	25843
+Yopal	85001
+Ventaquemada	15861
+Trinidad	85430
+Mariquita	73443
+Belén De Umbría	66088
+Chinavita	15172
+Tadó	27787
+Zetaquirá	15897
+Villeta	25875
+Manizales	17001
+Nemocón	25486
+La Capilla	15380
+Santuario (Risaralda)	66687
+Quebradanegra	25592
+Puerto Salgar	25572
+Aquitania	15047
+Alto Baudó (Pie De Pato)	27025
+San Pablo De Borbur	15681
+Nimaima	25489
+Lloró	27413
+Nunchía	85225
+Cuítiva	15226
+Sogamoso	15759
+Socha	15757
+Pisva	15550
+Sonsón	5756
+Aguadas	17013
+Santa Bárbara (Antioquia)	5679
+Paipa	15516
+Jericó (Antioquia)	5368
+Paz De Ariporo	85250
+Mogotes	68464
+Venecia (Antioquia)	5861
+Puerto Berrío	5579
+El Espino	15248
+Cimitarra	68190
+Medellín	5001
+Bahía Solano (Mutis)	27075
+Puerto Nare	5585
+Villavicencio	50001
+Floridablanca	68276
+Cucutilla	54223
+Yolombó	5890
+Bucaramanga	68001
+Entrerrios	5264
+Cerrito	68162
+San Vicente De Chucurí	68689
+Barrancabermeja	68081
+Arauquita	81065
+Granada (Meta)	50313
+Tona	68820
+Montelíbano	23466
+Aguachica	20011
+Tierralta	23807
+Nechí	5495
+Zaragoza	5895
+San Pablo (Bolívar)	13670
+Pamplona	54518
+Ocaña	54498
+Chinácota	54172
+Villa Del Rosario	54874
+Durania	54239
+Puerto Libertador	23580
+Samacá	15646
+El Banco	47245
+Zona Bananera	47980
+Fonseca	44279
+Chinú	23182
+Valledupar	20001
+San Benito Abad	70678
+Albania (La guajira)	44035
+Lorica	23417
+Riohacha	44001
+San Sebastián De Buenavista	47692
+Sincelejo	70001
+Tolú	70820
+Uribia	44847
+Morroa	70473
+Santa Marta	47001
+Plato	47555
+San Andrés (Archipiélago de San Andrés, Providencia y Santa Catalina)	88001
+Ariguaní (El Dificil)	47058
+Gamarra	20295
+Ayapel	23068
+El Guamo	13248
+Arjona	13052
+Agustín Codazzi	20013
+Repelón	8606
+Pueblo Nuevo	23570
+Montería	23001
+Suan	8770
+Manaure Balcón Del Cesar	20443
+San Marcos	70708
+Cartagena De Indias	13001
+Fundación	47288
+Pivijai	47551
+Sabanalarga (Atlántico)	8638
+Labranzagrande	15377
+Soledad	8758
+San Juan Del Cesar	44650
+Puerto Asís	86568
+Chachaguí	52240
+Palmira	76520
+Puerto Carreño	99001
+Lebrija	68406
+Cúcuta	54001
+Cereté	23162
+San Andres Y  Providencia (Santa Isabel)	88564
+Támara	85400
+San Juan De Arama	50683
+Castilla La Nueva	50150
+San José Del Guaviare	95001
+Vistahermosa	50711
+Monterrey	85162
+Tolú Viejo	70823
+Villagarzón	86885
+Cumaribo	99773
+Bagadó	27073
+Puerto Arica	91536
+Sabanalarga (Casanare)	85300
+Ciudad Bolívar	5101
+Chigorodó	5172
+Santa Fe De Antioquia	5042
+Rionegro (Antioquia)	5615
+Tarazá	5790
+Bello	5088
+Turbo	5837
+Unguía	27800
+Íquira	41357
+Villavieja	41872
+El Tambo (Cauca)	19256
+Puerto Leguízamo	86573
+El Bagre	5250
+Guayabal De Síquima	25328
+La Vega	25402
+Puerto Wilches	68575
+El Paso	20250
+Icononzo	73352
+Palestina (Huila)	41530
+Anapoima	25035
+Rivera	41615
+Anzoátegui	73043
+Villapinzón	25873
+Zipaquirá	25899
+Piedras	73547
+Quípama	15580
+Herrán	54347
+Guaduas	25320
+San Roque	5670
+Colombia	41206
+Santa Rosa Del Sur	13688
+Macanal	15425
+Almeida	15022
+Manta	25436
+El Zulia	54261
+Caucasia	5154
+Simití	13744
+Somondoco	15761
+El Águila	76243
+Sasaima	25718
+Guayatá	15325
+Gachancipá	25295
+Armero (Guayabal)	73055
+Tocancipá	25817
+Pailitas	20517
+Chaguaní	25168
+Gachantivá	15293
+Betania	5091
+El Carmen (Choco)	27245
+Albania (Santander)	68020
+Mongua	15464
+Támesis	5789
+Arcabuco	15051
+Quibdó	27001
+Nobsa	15491
+Gámeza	15296
+La Pintada	5390
+Ciénaga	47189
+Polonuevo	8558
+Tuta	15837
+Juan De Acosta	8372
+Arboledas	54051
+Cáchira	54128
+Rionegro (Santander)	68615
+Cáceres	5120
+San Alberto	20710
+Bochalema	54099
+La Esperanza	54385
+Margarita	13440
+Barranco De Loba	13074
+Sucre (Sucre)	70771
+San Pelayo	23686
+El Peñón (Bolívar)	13268
+Tibú	54810
+Santa Catalina	13673
+Hatillo De Loba	13300
+Ciénaga De Oro	23189
+Magangué	13430
+Distracción	44098
+Barrancas	44078
+Curumaní	20228
+Tubará	8832
+Barranquilla	8001
+Barranca De Upía	50110
+Puerto Colombia (Atlántico)	8573
+Puebloviejo	47570
+Carepa	5147
+Palermo	41524
+Salazar	54660
+Apartadó	5045
+Mompós	13468
+Puerto Escondido	23574
+Cotorra	23300
+San Fernando	13650
+Chimichagua	20175
+Chima (Córdoba)	23168
+San Andrés De Sotavento	23670
+Sitionuevo	47745
+Hato Nuevo	44378
+Dibulla	44090
+Maicao	44430
+Restrepo (Meta)	50606
+Vigia Del Fuerte	5873
+Riosucio (Choco)	27615
+Santiago (Norte de Santander)	54680
+Gramalote	54313
+San Cayetano (Norte de Santander)	54673
+Galeras	70235
+Sincé	70742
+Corozal	70215
+Ábrego	54003
+San Bernardo Del Viento	23675
+San Zenón	47703
+Cicuco	13188
+Santa María (Huila)	41676
+Villa Caro	54871
+Lourdes	54418
+Caldas (Antioquia)	5129
+La Primavera	99524
+Cocorná	5197
+Socotá	15755
+Titiribí	5809
+Carmen De Viboral	5148
+Santana	15686
+Sácama	85315
+Bolivar (Santander)	68101
+Suaita	68770
+Tame	81794
+Concordia (Antioquia)	5209
+Tutazá	15839
+Medio Atrato (Beté)	27425
+Sativanorte	15720
+Hato Corozal	85125
+Saravena	81736
+Encino	68264
+Jericó (Boyacá)	15368
+Granada (Antioquia)	5313
+Urrao	5847
+San Carlos (Antioquia)	5649
+Coromoro	68217
+Armenia (Antioquia)	5059
+Marinilla	5440
+Vegachí	5858
+Simacota	68745
+Frontino	5284
+Belmira	5086
+Zapatoca	68895
+Concepción (Santander)	68207
+Bojayá (Bellavista)	27099
+Yarumal	5887
+San Andrés (Santander)	68669
+Puerto Parra	68573
+Aratoca	68051
+Sabanalarga (Antioquia)	5628
+Heliconia	5347
+Onzaga	68502
+Buriticá	5113
+Chita	15183
+Peñol	5541
+Betulia (Antioquia)	5093
+Landázuri	68385
+Gama	25299
+Vélez	68861
+Susacón	15774
+Guadalupe (Santander)	68320
+Salamina (Caldas)	17653
+La Uvita	15403
+Oiba	68500
+Charalá	68167
+Cravo Norte	81220
+Guarne	5318
+Villa De Leiva	15407
+Anzá	5044
+San Vicente	5674
+El Guacamayo	68245
+Boavita	15097
+San Rafael	5667
+Chima (Santander)	68176
+Confines	68209
+Girardota	5308
+El Cocuy	15244
+Alejandría	5021
+Ocamonte	68498
+Concepción (Antioquia)	5206
+Caicedo	5125
+Páramo	68533
+San Joaquín	68682
+San Jerónimo	5656
+Valle De San José	68855
+Socorro	68755
+San Mateo	15673
+Santo Domingo	5690
+Macaravita	68425
+Capitanejo	68147
+Pinchote	68549
+Covarachía	15218
+Cabrera (Santander)	68121
+San Gil	68679
+Sopetrán	5761
+Chiscas	15180
+Palmar	68522
+Suratá	68780
+Cumbal	52227
+Curití	68229
+Santa Rosa De Osos	5686
+Carcasí	68152
+Yacopí	25885
+Olaya	5501
+Yalí	5885
+Yondó (Casabe)	5893
+Barichara	68079
+Abriaquí	5004
+Molagavita	68468
+Gómez Plata	5310
+Giraldo	5306
+El Carmen (Santander)	68235
+Málaga	68432
+Liborina	5411
+Cepitá	68160
+Los Santos	68418
+Moniquirá	15469
+Tasco	15790
+Cañasgordas	5138
+Duitama	15238
+Gámbita	68298
+Santa Rosa De Viterbo	15693
+Jesús María	68368
+Puerto Boyacá	15572
+La Unión (Antioquia)	5400
+Puerto Triunfo	5591
+Betéitiva	15092
+Sucre (Santander)	68773
+Salgar	5642
+Fredonia	5282
+Montebello	5467
+Guavatá	68324
+Cerinza	15162
+San Francisco (Antioquia)	5652
+Paz De Rio	15537
+San Luis (Antioquia)	5660
+Belén (Boyacá)	15087
+La Ceja	5376
+Ataco	73067
+Pradera	76563
+Fuente De Oro	50287
+Rioblanco	73616
+Dagua	76233
+El Castillo	50251
+Tocaima	25815
+Sibaté	25740
+Roldanillo	76622
+Tenza	15798
+Páez	15514
+Campohermoso	15135
+Palestina (Caldas)	17524
+Machetá	25426
+Aguazul	85010
+Medio San Juan	27450
+El Retorno	95025
+Garagoa	15299
+Condoto	27205
+Neira	17486
+La Macarena	50350
+Gigante	41306
+Algeciras	41020
+El Charco	52250
+El Dorado	50270
+Mosquera (Nariño)	52473
+Yaguará	41885
+Tesalia	41797
+Totoró	19824
+Ortega	73504
+Guamal (Meta)	50318
+San Carlos De Guaroa	50680
+Yotoco	76890
+Villarrica	73873
+Coyaima	73217
+Venadillo	73861
+Barranco Mina	94343
+Istmina	27361
+Gachalá	25293
+Alcalá	76020
+Toro	76823
+Sipí	27745
+Villagómez	25871
+Manzanares	17433
+Santa Rosalía	99624
+Anserma	17042
+Marulanda	17446
+Guática	66318
+Quinchía	66594
+Filadelfia	17272
+La Palma	25394
+Campoalegre	41132
+Nátaga	41483
+Pajarito	15518
+Honda	73349
+Mistrató	66456
+Marquetalia	17444
+Lenguazaque	25407
+Uribe	50370
+Hobo	41349
+Villahermosa	73870
+Chaparral	73168
+San Antonio	73675
+Suárez (Tolima)	73770
+Santa Isabel	73686
+Junín	25372
+Tibaná	15804
+Turmequé	15835
+Victoria	17867
+Carmen De Carupa	25154
+Belalcazar	17088
+El Cantón Del San Pablo (Managrú)	27135
+Caparrapí	25148
+Nuevo Colón	15494
+Rondón	15621
+Silvia	19743
+Piendamó	19548
+Teruel	41801
+San Luis (Tolima)	73678
+Acacías	50006
+Guamo	73319
+San Pedro (Valle del cauca)	76670
+Tuluá	76834
+Sevilla	76736
+Madrid	25430
+Rovira	73624
+Funza	25286
+Ubalá	25839
+Puerto Gaitán	50568
+Bojacá	25099
+Paime	25518
+Pensilvania	17541
+Cértegui	27160
+Jenesano	15367
+Guachetá	25317
+Ramiriquí	15599
+Samaná	17662
+San Luis De Palenque	85325
+Riosucio (Caldas)	17614
+Jambaló	19364
+Morales (Cauca)	19473
+Timbiquí	19809
+Venecia (Cundinamarca)	25506
+Andalucía	76036
+Bugalagrande	76113
+Aipe	41016
+Miranda	19455
+Puerto Lleras	50577
+Puerto Tejada	19573
+Paratebueno	25530
+Bolívar (Valle del cauca)	76100
+Zarzal	76895
+Anolaima	25040
+Supia	17777
+La Dorada	17380
+Gutiérrez	25339
+Guayabetal	25335
+Flandes	73275
+San Luis De Gaceno	15667
+Sopó	25758
+Lérida	73408
+Guatavita	25326
+Gachetá	25297
+Fusagasugá	25290
+Cota	25214
+Cáqueza	25151
+Subachoque	25769
+Líbano	73411
+Susa	25779
+Fúquene	25288
+Coper	15212
+Marmato	17442
+Rio Quito (Paimadó)	27600
+San José Del Palmar	27660
+Tenjo	25799
+Dosquebradas	66170
+Facatativá	25269
+Toca	15814
+Chiquinquirá	15176
+Jardín	5364
+Tauramena	85410
+Nóvita	27491
+Santa Sofía	15696
+Monguí	15466
+Tabio	25785
+Valparaiso	5856
+Puerto Concordia	50450
+Riofrío	76616
+Sáchica	15638
+Nuquí	27495
+Caramanta	5145
+Oicatá	15500
+Buenos Aires	19110
+Caloto	19142
+Tello	41799
+Santander De Quilichao	19698
+Planadas	73555
+Toribío	19821
+Pore	85263
+Sotaquirá	15763
+Tibasosa	15806
+Candelaria (Valle del cauca)	76130
+San Bernardo (Cundinamarca)	25649
+Carmen De Apicalá	73148
+El Litoral Del San Juán (Docordó)	27250
+Melgar	73449
+Cabuyaro	50124
+El Calvario	50245
+Nilo	25488
+Cumaral	50226
+Santiago (Putumayo)	86760
+Tota	15822
+Siachoque	15740
+Pácora	17513
+Simijaca	25745
+Quetame	25594
+Soracá	15764
+San Juan De Rioseco	25662
+Buenavista (Boyacá)	15109
+Pesca	15542
+Caldono	19137
+Mapiripán	50325
+Puerto Rico (Meta)	50590
+Iza	15362
+Sutamarchán	15776
+Cómbita	15204
+Pauna	15531
+Motavita	15476
+Chíquiza	15232
+Valle De San Juan	73854
+Pandi	25524
+Mapiripana	94343
+Otanche	15507
+Génova	63302
+Villa Rica	19845
+Corinto	19212
+Mani	85139
+Pijao	63548
+Medina	25438
+Tibacuy	25805
+Muzo	15480
+Ráquira	15600
+Tunja	15001
+Chivatá	15187
+Andes	5034
+Maripí	15442
+San Miguel De Sema	15676
+Norcasia	17495
+Chivor	15236
+Chía	25175
+Firavitoba	15272
+Suárez (Cauca)	19780
+Saboyá	15632
+Mesetas	50330
+Alpujarra	73024
+Ubaque	25841
+Sesquilé	25736
+Fómeque	25279
+Tibirita	25807
+Apía	66045
+Chocontá	25183
+Rosas	19622
+Sotará (Paispamba)	19760
+La Plata	41396
+San Martín (Meta)	50689
+Guacarí	76318
+Ginebra	76306
+Cubarral	50223
+Une	25845
+Viotá	25878
+Nocaima	25491
+Viterbo	17877
+Roberto Payán (San José)	52621
+La Argentina	41378
+Pital	41548
+Garzón	41298
+Patía (El Bordo)	19532
+Timbío	19807
+Dolores	73236
+La Cumbre	76377
+Vijes	76869
+El Cerrito	76248
+Salento	63690
+Pulí	25580
+Villanueva (Casanare)	85440
+Miraflores (Boyacá)	15455
+Útica	25851
+Chinchina	17174
+Sutatenza	15778
+Abejorral	5002
+Pueblorrico	5576
+Lejanías	50400
+Jerusalén	25368
+La Unión (Valle del cauca)	76400
+Versalles	76863
+Choachí	25181
+Alvarado	73026
+El Colegio	25245
+Pueblo Rico	66572
+Obando	76497
+Chámeza	85015
+Tausa	25793
+Úmbita	15842
+Pacho	25513
+Cucunubá	25224
+El Peñón (Cundinamarca)	25258
+Paicol	41518
+Corrales	15215
+El Dovio	76250
+Soacha	25754
+La Victoria (Valle del cauca)	76403
+Pachavita	15511
+Fresno	73283
+Medio Baudó(Boca De Pepé)	27430
+Berbeo	15090
+Altamira	41026
+Magüí (Payán)	52427
+Tarqui	41791
+San Francisco (Putumayo)	86755
+La Unión (Nariño)	52399
+Policarpa	52540
+Sibundoy	86749
+Acevedo	41006
+La Cruz	52378
+El Doncello	18247
+Colón (Génova)	52203
+El Rosario	52256
+Santa Rosa (Cauca)	19701
+Los Andes (Sotomayor)	52418
+La Chorrera	91405
+La Pedrera	91407
+Mirití-Paraná (Campoamor)	91460
+Puerto Alegría	91530
+Cartagena Del Chairá	18150
+San Miguel (La Dorada)	86757
+Valle Del Guamuez (La Hormiga)	86865
+Puerto Caicedo	86569
+Potosí	52560
+Cuaspud (Carlosama)	52224
+Aldana	52022
+Gualmatán	52323
+Mitú	97001
+Manaure	44560
+San Martín (Cesar)	20770
+Sampués	70670
+Santa Ana	47707
+San Juan De Betulia (Betulia)	70702
+San Antero	23672
+Buenavista (Sucre)	70110
+Chiriguaná	20178
+Talaigua Nuevo	13780
+Becerrill	20045
+La Apartada	23350
+Los Palmitos	70418
+Córdoba (Bolívar)	13212
+Santa Bárbara De Pinto	47720
+Colosó	70204
+Astrea	20032
+Ovejas	70508
+Chalán	70230
+La Jagua De Ibirico	20400
+Amalfi	5031
+El Retén	47268
+Uramita	5842
+San José De La Montaña	5658
+Guaca	68318
+Toledo (Norte de Santander)	54820
+Angostura	5038
+San Andrés (Antioquia)	5647
+Santa Bárbara (Santander)	68705
+Piedecuesta	68547
+Arauca	81001
+Buenavista (Córdoba)	23079
+Anorí	5040
+Sardinata	54720
+Río De Oro	20614
+Nueva Granada	47460
+Zambrano	13894
+El Carmén De Bolívar	13244
+San Diego	20750
+Girón	68307
+Dabeiba	5234
+Remedios	5604
+Chitagá	54174
+Murindó	5475
+Luruaco	8421
+Manatí	8436
+Candelaria (Atlántico)	8141
+La Jagua Del Pilar	44420
+Peque	5543
+Planeta Rica	23555
+La Playa	54398
+Silos	54743
+Matanza	68444
+Ituango	5361
+Campamento	5134
+Guaranda	70265
+Puerto Santander	54553
+Segovia	5736
+Charta	68169
+Morales (Bolívar)	13473
+Sabana De Torres	68655
+Mutatá	5480
+El Playón	68255
+San Jacinto	13654
+Tenerife	47798
+María La Baja	13442
+Bosconia	20060
+San Juan Nepomuceno	13657
+Arenal	13042
+San Calixto	54670
+Necoclí	5490
+Mahates	13433
+El Copey	20238
+Calamar (Bolívar)	13140
+Algarrobo	47030
+Arboletes	5051
+Regidor	13580
+San Carlos (Córdoba)	23678
+Pelaya	20550
+Majagual	70429
+El Tarra	54250
+San Juan De Urabá	5659
+El Carmen (Norte de Santander)	54245
+Sahagún	23660
+Canalete	23090
+Caimito	70124
+Pueblo Bello	20570
+Salamina (Magdalena)	47675
+Betulia (Santander)	68092
+Juradó	27372
+Cubará	15223
+Arroyohondo	13062
+Aracataca	47053
+Ponedera	8560
+Villanueva (La guajira)	44874
+Urumita	44855
+Briceño (Antioquia)	5107
+Carmen Del Darién  (Curbaradó)	27150
+Labateca	54377
+Valdivia	5854
+Cantagallo	13160
+Cácota	54125
+Valencia	23855
+Teorama	54800
+Ríoviejo	13600
+Acandí	27006
+La Gloria	20383
+Piojó	8549
+Santa Lucia	8675
+El Piñón	47258
+Campo De La Cruz	8137
+La Paz (Cesar)	20621
+Pamplonita	54520
+San Martín De Loba	13667
+Vetas	68867
+Mutiscua	54480
+California	68132
+Ragonvalia	54599
+San Pedro De Urabá	5665
+Tamalameque	20787
+Convención	54206
+Remolino	47605
+Baranoa	8078
+Sabanas De San Ángel	47660
+San Cristóbal	13620
+San Estanislao	13647
+Turbaco	13836
+Usiacurí	8849
+Consacá	52207
+Valparaíso	18860
+Colón	86219
+Puerto Rico (Caquetá)	18592
+Bolívar (Cauca)	19100
+San Sebastián	19693
+Santa Cruz (Guachavés)	52699
+Nariño (Nariño)	52480
+Buesaco	52110
+Milán	18460
+Isnos	41359
+Suaza	41770
+Mercaderes	19450
+Pupiales	52585
+Puerto Guzmán	86571
+Belén De Los Andaquíes	18094
+Sandoná	52683
+San José Del Fragua	18610
+Yavaraté  (Cor. Departamental)	97889
+Samaniego	52678
+Linares	52411
+El Tablón	52258
+Almaguer	19022
+Leiva	52405
+Elías	41244
+	19397
+Oporapa	41503
+Francisco Pizarro (Salahonda)	52520
+Guadalupe (Huila)	41319
+Funes	52287
+Imués	52354
+Tangua	52788
+El Peñol	52254
+El Tambo (Nariño)	52260
+Morelia	18479
+Arboleda (Berruecos)	52051
+Montañita	18410
+La Llanada	52385
+San Bernardo (Nariño)	52685
+Tarapacá	91798
+El Paujil	18256
+El Encanto	91263
+Guacamayas	15317
+Supata	25777
+Toledo (Antioquia)	5819
+Don Matías	5237
+San Benito	68673
+Boyacá	15104
+Argelia (Valle del cauca)	76054
+Taraira	97666
+Hacarí	54344
+Sapuyes	52720
+Momil	23464
+Puente Nacional	68572
+Chipaque	25178
+Bajo Baudó (Pizarro)	27077
+Retiro	5607
+Unión Panamericana ( Animas)	27810
+Rio Iró (Santa Rita)	27580
+Trujillo	76828
+Cogua	25200
+Circasia	63190
+Sabanagrande	8634
+Barbosa (Antioquia)	5079
+Ricaurte (Cundinamarca)	25612
+La Mesa	25386
+Argelia (Antioquia)	5055
+Santuario (Antioquia)	5697
+Tiquisio (Puerto Rico)	13810
+San Pedro (Sucre)	70717
+Carurú	97161
+San Jose De Ure	23682
+Orito	86320
