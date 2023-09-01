@@ -44,8 +44,8 @@ shinyUI(fluidPage(
              br(),
              fluidRow(
                p("La herramienta propuesta facilita el análisis estadístico descriptivo por medio de gráficas, tablas y mapas para algunas de las etiquetas básicas de DHIME más representativas:
-                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2012")," hasta el", strong(" 18 de agosto de 2023"),". 
-                 El Catálogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la página del Instituto el ", strong("18 de agosto de 2023"),". La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
+                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2012")," hasta el", strong(" 1 de septiembre de 2023"),". 
+                 El Catálogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la página del Instituto el ", strong("1 de septiembre de 2023"),". La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
                br()
                # p("La herramienta se compone de 5 módulos lo cuáles se explican a continuación:")
              ),
@@ -68,7 +68,7 @@ shinyUI(fluidPage(
                       div(actionButton('jumpToP3',strong('Avances Áreas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
                       p(strong("Módulo Avances Áreas Operativas: "),"A través de este módulo, se puede apreciar los avances de digitación de algunas etiquetas de DHIME por parte de las Áreas Operativas.
-                         A partir de la descarga realizada el ",strong("9 de agosto de 2023")," y la última descarga del ", strong("18 de agosto de 2023")," se calculan diferencias que 
+                         A partir de la descarga realizada el ",strong("18 de agosto de 2023")," y la última descarga del ", strong("1 de septiembre de 2023")," se calculan diferencias que 
                          permiten asociar el estado de avance por cada Área Operativa.",style="text-align:justify")
                       )
              ),
@@ -103,7 +103,7 @@ shinyUI(fluidPage(
                column(4,
                       div(actionButton('jumpToP10',strong('Series Etiquetas DHIME'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("18 de agosto de 2023"),"." ,style="text-align:justify")
+                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("1 de septiembre de 2023"),"." ,style="text-align:justify")
                ),
                column(2)
              ),
