@@ -4,8 +4,8 @@
 
 # Ajustar las rutas locales en las líneas de código 20
 
-install.packages(setdiff('terra', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
-install.packages(setdiff('raster', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
+#install.packages(setdiff('terra', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
+#install.packages(setdiff('raster', rownames(installed.packages())), repos='https://rspatial.r-universe.dev')
 
 packs = c("mapview","leaflet","sf","dplyr","plotly","rgdal","leafem","readxl","shinydashboard","stringr","tidyr","dygraphs","xts","DT","leaflet.extras","bslib","shinythemes","shinyalert","RSQLite","reshape2")
 install.packages(setdiff(packs, rownames(installed.packages()))) 
