@@ -11,7 +11,7 @@ packs = c("mapview","leaflet","sf","dplyr","plotly","rgdal","leafem","readxl","s
 install.packages(setdiff(packs, rownames(installed.packages()))) 
 
 library(leaflet)
-library(raster)
+#library(raster)
 library(sf)
 library(dplyr)
 try(library(raster),silent = T)
