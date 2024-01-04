@@ -21,11 +21,13 @@ filtroEtiquetasDHIME = function(id,labelId) {
 filtroAnios = function(id,labelId) {
   selectInput(id,
               label = labelId,
-              choices = c("2012" = 2012,"2013" = 2013,
+              choices = c("2013" = 2013,
                           "2014" = 2014,"2015" = 2015,
                           "2016" = 2016,"2017" = 2017,
                           "2018" = 2018,"2019" = 2019,
-                          "2020" = 2020,"2021" = 2021,"2022" = 2022,"2023" = 2023))
+                          "2020" = 2020,"2021" = 2021,
+			  "2022" = 2022,"2023" = 2023,
+			  "2024" = 2024))
 }
 
 filtroV1AreasOperativas = function(id,labelId) {
