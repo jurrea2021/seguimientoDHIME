@@ -146,7 +146,7 @@ shinyUI(fluidPage(
   ##############Footer----    
   ###############################################.
   #Copyright warning
-  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v2.0 2023", 
+  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v2.0 2024", 
               style = "
               position:fixed;
               text-align:center;
