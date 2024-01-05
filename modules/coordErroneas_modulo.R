@@ -126,7 +126,7 @@ coordErroneas = function(input, output, session) {
     if (is.na(stringr::str_pad(COORDSMALAS_B$DIVIPOLA,5,pad = "0")) & dim(Muni2)[1] == 0) {
       leaflet() %>%
         addTiles(group = "Google Maps") %>%
-        addProviderTiles("Esri.WorldImagery",group = "WorldImagery") %>% #addProviderTiles(providers$Stamen.TonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stamen.TonerLabels,group = "WorldImagery") %>% 
+        addProviderTiles("Esri.WorldImagery",group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLabels,group = "WorldImagery") %>% 
         addCircleMarkers(data = COORDSMALAS_A,group = "Catalogo 2014",lng=COORDSMALAS_A$longitudCNE_2014,lat=COORDSMALAS_A$latitudCNE_2014,color = "#0917F1",opacity = 0.8, radius = 6,label =paste("codigo:", COORDSMALAS_A$codigo, "<br>",
                                                                                                                                                                                                     "nombre:", COORDSMALAS_A$nombreCNE_2014, "<br>",
                                                                                                                                                                                                     "longitud:", COORDSMALAS_A$longitudCNE_2014, "<br>",
@@ -167,7 +167,7 @@ coordErroneas = function(input, output, session) {
     } else if (isTRUE(is.na(COORDSMALAS_B$MUNICIPIO_SHAPE))) {
       leaflet() %>%
         addTiles(group = "Google Maps") %>%
-        addProviderTiles("Esri.WorldImagery",group = "WorldImagery") %>% #addProviderTiles(providers$Stamen.TonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stamen.TonerLabels,group = "WorldImagery") %>% 
+        addProviderTiles("Esri.WorldImagery",group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLabels,group = "WorldImagery") %>%
         addPolygons(data = Muni1, weight = 1, smoothFactor = 0.5,opacity = 1.0,color = "green", fillOpacity = 0.3,group = "Municipio VERDADERO",label = ~ MPIO_CNMBR) %>%
         addCircleMarkers(data = COORDSMALAS_A,group = "Catalogo 2014",lng=COORDSMALAS_A$longitudCNE_2014,lat=COORDSMALAS_A$latitudCNE_2014,color = "#0917F1",opacity = 0.8, radius = 6,label =paste("codigo:", COORDSMALAS_A$codigo, "<br>",
                                                                                                                                                                                                     "nombre:", COORDSMALAS_A$nombreCNE_2014, "<br>",
@@ -209,7 +209,7 @@ coordErroneas = function(input, output, session) {
     } else {
       leaflet() %>%
         addTiles(group = "Google Maps") %>%
-        addProviderTiles("Esri.WorldImagery",group = "WorldImagery") %>% #addProviderTiles(providers$Stamen.TonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stamen.TonerLabels,group = "WorldImagery") %>% 
+        addProviderTiles("Esri.WorldImagery",group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLabels,group = "WorldImagery") %>%
         addPolygons(data = Muni1, weight = 1, smoothFactor = 0.5,opacity = 1.0,color = "green", fillOpacity = 0.3,group = "Municipio VERDADERO",label = ~ MPIO_CNMBR) %>%
         addPolygons(data = Muni2, weight = 1, smoothFactor = 0.5,opacity = 1.0,color = "orange", fillOpacity = 0.3,group = "Municipio FALSO",label = ~ MPIO_CNMBR) %>%
         addCircleMarkers(data = COORDSMALAS_A,group = "Catalogo 2014",lng=COORDSMALAS_A$longitudCNE_2014,lat=COORDSMALAS_A$latitudCNE_2014,color = "#0917F1",opacity = 0.8, radius = 6,label =paste("codigo:", COORDSMALAS_A$codigo, "<br>",
