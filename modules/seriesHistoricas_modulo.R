@@ -111,7 +111,7 @@ seriesHistoricas = function(input, output, session) {
     pal = colorFactor(palette = c("#73FFDF","#0070FF","#FFAA00","#4CE600","#FFFF00"),levels = c("< 10 anios","10 - 20 anios","20 - 30 anios","30 - 40 anios","> 40 anios"))
     
     m = leaflet() %>%
-      addProviderTiles("Esri.WorldImagery") %>% addProviderTiles(providers$Stamen.TonerLines) %>% addProviderTiles(providers$Stamen.TonerLabels) %>% 
+      addProviderTiles("Esri.WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLines,group = "WorldImagery") %>% addProviderTiles(providers$Stadia.StamenTonerLabels,group = "WorldImagery") %>%
       addPolygons(data = SubRegs1, weight = 1, smoothFactor = 0.5,opacity = 1.0,color = "#6CAB96", fillOpacity = 0.8,group = "Subregiones",label = ~ NOM_SUBREG) %>%
       addCircleMarkers(data = seriesHist1,lng= ~ longitud,lat= ~ latitud,color = ~pal(lngSerie),group = "Estaciones", opacity = 0.8, radius = 5, fillOpacity = 0.8,label =paste("codigo:", seriesHist1$codigo, "<br>",
                                                                                                                                                                                 "nombre:", seriesHist1$nombre, "<br>",
