@@ -57,16 +57,15 @@ AOPorcentajesUI = function(id) {
              column(10,
                     tabsetPanel(
                       tabPanel("Tabla 1",
-                               h4(strong(textOutput(ns("text16"))), align = "center"),
-                               # h4("Meses procesados por Área Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10)", align = "center"),
-                               div(dataTableOutput(ns("tablaMetaBetaMes")),style = "font-size:70%")
-                      ),
-                      tabPanel("Tabla 2",
                                h4(strong(textOutput(ns("text15"))), align = "center"),
                                # h4("Meses procesados por Área Operativa a escala mensual con las estaciones que tuvieron registros en el año", align = "center"),
                                div(dataTableOutput(ns("tablaMetaMes")),style = "font-size:70%")
-                      )
-                      
+                      ),
+                      tabPanel("Tabla 2",
+                               h4(strong(textOutput(ns("text16"))), align = "center"),
+                               # h4("Meses procesados por Área Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10)", align = "center"),
+                               div(dataTableOutput(ns("tablaMetaBetaMes")),style = "font-size:70%")
+                      )                      
                     )
              ),
              column(1)
