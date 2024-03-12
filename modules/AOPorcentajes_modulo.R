@@ -39,15 +39,15 @@ AOPorcentajesUI = function(id) {
                     ),
                     tabsetPanel(
                       tabPanel("Tabla 1",
-                               h4(strong(textOutput(ns("text14"))), align = "center"),
-                               # h4("Metas anuales por Área Operativa con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10)", align = "center"),
-                               div(dataTableOutput(ns("tablaMetaBeta")),style = "font-size:70%")
-                      ),
-                      tabPanel("Tabla 2",
                                h4(strong(textOutput(ns("text13"))), align = "center"),
                                # h4("Metas anuales por Área Operativa con las estaciones que tuvieron registros en el año", align = "center"),
                                div(dataTableOutput(ns("tablaMeta")),style = "font-size:70%")
-                      )
+                      ),
+                      tabPanel("Tabla 2",
+                               h4(strong(textOutput(ns("text14"))), align = "center"),
+                               # h4("Metas anuales por Área Operativa con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10)", align = "center"),
+                               div(dataTableOutput(ns("tablaMetaBeta")),style = "font-size:70%")
+                      )                      
                     )
              )
              
