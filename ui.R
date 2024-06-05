@@ -103,7 +103,7 @@ shinyUI(fluidPage(
                column(4,
                       div(actionButton('jumpToP10',strong('Series Etiquetas DHIME'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("5 de septiembre de 2023"),"." ,style="text-align:justify")
+                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("5 de junio de 2024"),"." ,style="text-align:justify")
                ),
                column(2)
              ),
