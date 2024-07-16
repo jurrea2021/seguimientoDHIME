@@ -68,7 +68,7 @@ shinyUI(fluidPage(
                       div(actionButton('jumpToP3',strong('Avances Áreas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
                       p(strong("Módulo Avances Áreas Operativas: "),"A través de este módulo, se puede apreciar los avances de digitación de algunas etiquetas de DHIME por parte de las Áreas Operativas.
-                         A partir de la descarga realizada el ",strong("13 de junio de 2024")," y la última descarga del ", strong("4 de julio de 2024")," se calculan diferencias que 
+                         A partir de la descarga realizada el ",strong("4 de junio de 2024")," y la última descarga del ", strong("12 de julio de 2024")," se calculan diferencias que 
                          permiten asociar el estado de avance por cada Área Operativa.",style="text-align:justify")
                       )
              ),
@@ -103,7 +103,7 @@ shinyUI(fluidPage(
                column(4,
                       div(actionButton('jumpToP10',strong('Series Etiquetas DHIME'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("4 de julio de 2024"),"." ,style="text-align:justify")
+                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("12 de julio de 2024"),"." ,style="text-align:justify")
                ),
                column(2)
              ),
