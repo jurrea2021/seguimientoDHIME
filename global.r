@@ -65,6 +65,7 @@ CNE_IDEAM$longitud = as.numeric(CNE_IDEAM$longitud)
 CNE_IDEAM$subred = NULL
 CNE_IDEAM = as.data.frame(CNE_IDEAM)
 CNE_OE = as.data.frame(CNE_OE)
+names(CNE_OE)[c(2,9,10)] = c("nombre","latitud","longitud")
 CNE_IDEAM$FUENTE = "CNE_IDEAM"
 CNE_OE$FUENTE = "CNE_OE"
 CNE = rbind(CNE_IDEAM,CNE_OE) ## Union de ambos catalogos
