@@ -63,6 +63,7 @@ names(CNE_IDEAM)[c(2,9,10)] = c("nombre","latitud","longitud")
 CNE_IDEAM$latitud = as.numeric(CNE_IDEAM$latitud)
 CNE_IDEAM$longitud = as.numeric(CNE_IDEAM$longitud)
 CNE_IDEAM$subred = NULL
+print("1_1_1")
 CNE_IDEAM = as.data.frame(CNE_IDEAM)
 CNE_OE = as.data.frame(CNE_OE)
 names(CNE_OE)[c(2,9,10)] = c("nombre","latitud","longitud")
