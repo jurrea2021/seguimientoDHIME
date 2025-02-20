@@ -44,8 +44,8 @@ shinyUI(fluidPage(
              br(),
              fluidRow(
                p("La herramienta propuesta facilita el análisis estadístico descriptivo por medio de gráficas, tablas y mapas para algunas de las etiquetas básicas de DHIME más representativas:
-                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2014")," hasta el", strong(" 3 de febrero de 2025"),". 
-                 El Catálogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la página del Instituto el ", strong("3 de febrero de 2025"),". La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
+                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2014")," hasta el", strong(" 20 de febrero de 2025"),". 
+                 El Catálogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la página del Instituto el ", strong("19 de febrero de 2025"),". La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
                br()
                # p("La herramienta se compone de 5 módulos lo cuáles se explican a continuación:")
              ),
