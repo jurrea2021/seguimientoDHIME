@@ -32,7 +32,9 @@ AOPorcentajesUI = function(id) {
              ),
              column(6,
                     fluidRow(
-                      column(10),
+                      column(10,
+                             div(tags$a(img(src="ecuacion.png", height=30,width= 550)),style = "position: relative; top: -4px",align ="center")
+                            ),
                       column(1,
                              botonAyuda(ns("ayuda4"))
                       )
