@@ -3,7 +3,7 @@ Sys.setlocale(locale = "Spanish")
 AOPorcentajesUI = function(id) {
   ns <- NS(id)
   
-  tabPanel(strong("Porcentaje digitación"),value = "panel2",
+  tabPanel(strong("Porcentaje digitacion"),value = "panel2",
            fluidRow(
              column(6,
                     fluidRow(
@@ -15,7 +15,7 @@ AOPorcentajesUI = function(id) {
                              filtroEtiquetasDHIME(ns('variablePorc'),'ETIQUETA DHIME')
                       ),
                       column(4,
-                             filtroAnios(ns('anioPorc'), 'AÑO')
+                             filtroAnios(ns('anioPorc'), 'ANIO')
                       ),
                       column(2)
                     ),
@@ -82,34 +82,34 @@ AOPorcentajesUI = function(id) {
 AOPorcentajes = function(input, output, session) {
   observeEvent(input$ayuda3, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir de los filtros de Año y etiqueta DHIME, se ajusta la gráfica correspondiente a los porcentajes y datos digitados para la etiqueta seleccionada, por cada mes del año seleccionado y por Área Operativa. Toma la cantidad de estaciones con registros de la etiqueta en el mes del Área Operativa.",type = "info")
+    shinyalert("Importante!", "A partir de los filtros de Anio y etiqueta DHIME, se ajusta la grafica correspondiente a los porcentajes y datos digitados para la etiqueta seleccionada, por cada mes del anio seleccionado y por Area Operativa. Toma la cantidad de estaciones con registros de la etiqueta en el mes del Area Operativa.",type = "info")
   })
   
   observeEvent(input$ayuda4, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir de los filtros de Año y etiqueta DHIME, las tablas 1 y 2 describen las metas anuales por Área Operativa obtenidas con base al listado de las estaciones que las Áreas Operativas usan para enviar sus reportes por Intranet y el listado de las estaciones que reportaron datos de la etiqueta seleccionada en el Año seleccionado.",type = "info")
+    shinyalert("Importante!", "A partir de los filtros de Anio y etiqueta DHIME, las tablas 1 y 2 describen las metas anuales por Area Operativa obtenidas con base al listado de las estaciones que las Areas Operativas usan para enviar sus reportes por Intranet y el listado de las estaciones que reportaron datos de la etiqueta seleccionada en el Anio seleccionado.",type = "info")
   })
   
   observeEvent(input$ayuda5, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir de los filtros de Año y etiqueta DHIME, las tablas 1 y 2 describen el total de meses procesados del listado de estaciones que las Áreas Operativas usan para enviar sus reportes por Intranet y el listado de estaciones que reportan datos de la etiqueta seleccionada en el Año seleccionado respectivamente.",type = "info")
+    shinyalert("Importante!", "A partir de los filtros de Anio y etiqueta DHIME, las tablas 1 y 2 describen el total de meses procesados del listado de estaciones que las Areas Operativas usan para enviar sus reportes por Intranet y el listado de estaciones que reportan datos de la etiqueta seleccionada en el Anio seleccionado respectivamente.",type = "info")
   })
   
   output$text12 <- renderText({
-    paste("Porcentaje de digitación de datos de ",input$variablePorc," por Área Operativa en el ",input$anioPorc)
+    paste("Porcentaje de digitacion de datos de ",input$variablePorc," por Area Operativa en el ",input$anioPorc)
   })
   
   output$text13 <- renderText({
-    paste("Metas anuales por área Operativa con las estaciones que tuvieron registros de ",input$variablePorc,"  en el año ",input$anioPorc)
+    paste("Metas anuales por area Operativa con las estaciones que tuvieron registros de ",input$variablePorc,"  en el anio ",input$anioPorc)
   })
   output$text14 <- renderText({
-    paste("Metas anuales por Área Operativa con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10) para la etiqueta ",input$variablePorc,"  en el año ",input$anioPorc)
+    paste("Metas anuales por Area Operativa con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10) para la etiqueta ",input$variablePorc,"  en el anio ",input$anioPorc)
   })
   output$text15 <- renderText({
-    paste("Meses procesados por Área Operativa a escala mensual con las estaciones que tuvieron registros de ",input$variablePorc," en el año ",input$anioPorc)
+    paste("Meses procesados por Area Operativa a escala mensual con las estaciones que tuvieron registros de ",input$variablePorc," en el anio ",input$anioPorc)
   })
   output$text16 <- renderText({
-    paste("Meses procesados por Área Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10) para la etiqueta ",input$variablePorc," en el año ",input$anioPorc)
+    paste("Meses procesados por Area Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10) para la etiqueta ",input$variablePorc," en el anio ",input$anioPorc)
   })
   
   PORCENTAJES = reactive({
