@@ -6,9 +6,9 @@ AOSConvencionalesTimeSeriesUI = function(id) {
            dashboardPage(
              dashboardHeader(disable = T),
              dashboardSidebar(
-               filtroV1AreasOperativas(ns("AOSCoompleto"),"ÁREA OPERATIVA"),
+               filtroV1AreasOperativas(ns("AOSCoompleto"),"AREA OPERATIVA"),
                selectInput(inputId = ns("seleccionarEstacion"),
-                           label = shiny::span(strong("Seleccione código de la estación de interés"), style = "color:red"),#div("Seleccione código de la estación de interés",style = "color: #1C2322"),
+                           label = shiny::span(strong("Seleccione código de la estacion de interes"), style = "color:red"),#div("Seleccione código de la estación de interés",style = "color: #1C2322"),
                            choices = NULL),
                selectInput(inputId = ns("etiqSeriesTime"),
                            label = "ETIQUETA DHIME",
@@ -63,7 +63,7 @@ AOSConvencionalesTimeSeries = function(input, output, session) {
   })
   
   observe({
-    updateSelectInput(session, inputId = "seleccionarEstacion",label = "Seleccione código de la estación de interés", 
+    updateSelectInput(session, inputId = "seleccionarEstacion",label = "Seleccione codigo de la estacion de interes", 
                       choices = c(listadoEstaciones()$estacion))
   })
   
