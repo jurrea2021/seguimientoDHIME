@@ -7,23 +7,23 @@ AOSAUT_NV_AUT_60_UI = function(id) {
            fluidRow(
              column(4,
                     fluidRow(
-                      p("A través de este módulo, se pueden realizar consultas de información de ubicación, cantidad de datos mensual y anual de la etiqueta NV_AUT_60
-                                     para una estación automática en partícular" ,style="text-align:justify;color:black;background-color:lavender;padding:15px;border-radius:10px")
+                      p("A traves de este modulo, se pueden realizar consultas de informacion de ubicacion, cantidad de datos mensual y anual de la etiqueta NV_AUT_60
+                                     para una estacion automatica en particular" ,style="text-align:justify;color:black;background-color:lavender;padding:15px;border-radius:10px")
                     ),
                     selectInput(inputId = ns("selecEstacionNV"),
-                                label = "Seleccione código de la estación de interés",
+                                label = "Seleccione codigo de la estacion de interes",
                                 choices = NULL),
-                    h4(strong("Ubicación de la estación"), align = "center"),
+                    h4(strong("Ubicacion de la estacion"), align = "center"),
                     leafletOutput(ns("mapAutNV_AUT_60")),
                     filtroAnios(ns('anioNV'), 'AÑO'),
-                    h4("Análisis de cantidad de estaciones por rangos de días de digitación de datos anual", align = "center"),
+                    h4("Analisis de cantidad de estaciones por rangos de dias de digitacion de datos anual", align = "center"),
                     plotlyOutput(ns('graficoNVAut'))
              ),
              column(8,
                     h5(textOutput(ns("dataNVAut")), align = "center"),
-                    setDownTable("Cantidad de días con valores de NV_AUT_60 en DHIME por año",ns("tabla8NV_AUT_60"),ns("downloadTabla8NV_AUT_60"),titleStatic = TRUE),
+                    setDownTable("Cantidad de dias con valores de NV_AUT_60 en DHIME por anio",ns("tabla8NV_AUT_60"),ns("downloadTabla8NV_AUT_60"),titleStatic = TRUE),
                     filtroAnios(ns('anio5NV_AUT_60'), 'AÑO'),
-                    setDownTable("Cantidad de días con valores de NV_AUT_60 en DHIME por mes",ns("tabla9NV_AUT_60"),ns("downloadTabla9NV_AUT_60"),titleStatic = TRUE)
+                    setDownTable("Cantidad de dias con valores de NV_AUT_60 en DHIME por mes",ns("tabla9NV_AUT_60"),ns("downloadTabla9NV_AUT_60"),titleStatic = TRUE)
              )
            )
   )
@@ -34,7 +34,7 @@ AOSAUT_NV_AUT_60_UI = function(id) {
 AOSAUT_NV_AUT_60 = function(input, output, session) {
   
   observe({
-    updateSelectInput(session, inputId = "selecEstacionNV",label = "Seleccione código de la estación de interés", 
+    updateSelectInput(session, inputId = "selecEstacionNV",label = "Seleccione codigo de la estacion de interes", 
                       choices = c(LISTADOESTACIONESNV_AUT_60$codigoEstacion))
   })
   
