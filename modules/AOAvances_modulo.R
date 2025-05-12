@@ -13,7 +13,7 @@ AOAvancesUI = function(id) {
                              filtroEtiquetasDHIME(ns('variableX'),'ETIQUETA DHIME')
                       ),
                       column(4,
-                             filtroAnios(ns('anio2'), 'AÑO')
+                             filtroAnios(ns('anio2'), 'ANIO')
                       ),
                       column(2)
                     ),
@@ -29,7 +29,7 @@ AOAvancesUI = function(id) {
                       column(2,
                              botonAyuda(ns("ayuda6"))                                   )
                     ),
-                    setDownTable("Comparación de porcentajes de digitación de Áreas Operativas con descargas anteriores",ns("tabla5"),ns("downloadTabla5"),titleStatic = TRUE)
+                    setDownTable("Comparación de porcentajes de digitación de Areas Operativas con descargas anteriores",ns("tabla5"),ns("downloadTabla5"),titleStatic = TRUE)
              ),
              fluidRow(
                column(5,
@@ -90,21 +90,21 @@ AOAvances = function(input, output, session) {
   
   observeEvent(input$ayuda24, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!","La tabla contiene información de las estaciones filtradas por etiqueta DHIME, Año, Mes y Área Operativa con contenido relacionado con la cantidad y porcentaje de datos por descarga para cada estación, asi como un campo con el cálculo del Avance que es el cálculo del porcentaje diferencial de ambos porcentajes de datos ya mencionados.",type = "info")
+    shinyalert("Importante!","La tabla contiene informacion de las estaciones filtradas por etiqueta DHIME, Anio, Mes y Area Operativa con contenido relacionado con la cantidad y porcentaje de datos por descarga para cada estacion, asi como un campo con el calculo del Avance que es el calculo del porcentaje diferencial de ambos porcentajes de datos ya mencionados.",type = "info")
   })
   
   observeEvent(input$ayuda7, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir de los filtros de Año, Mes y etiqueta DHIME, la gráfica representa la cantidad de registros de la etiqueta seleccionadas que fueron analizados en el proceso del cálculo de los avances.\n Los registros de las descargas usadas y se encuentran agrupados por Área Operativa.",type = "info")
+    shinyalert("Importante!", "A partir de los filtros de Anio, Mes y etiqueta DHIME, la grafica representa la cantidad de registros de la etiqueta seleccionadas que fueron analizados en el proceso del calculo de los avances.\n Los registros de las descargas usadas y se encuentran agrupados por Area Operativa.",type = "info")
   })
   
   observeEvent(input$ayuda6, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir de los filtros de Año y etiqueta DHIME, la gráfica (izquierda) y la tabla (derecha) resumen por Área Operativa los avances de digitación en DHIME, representado como la diferencia de los porcentajes de digitación por mes de dos descargas realizadas a la etiqueta seleccionada y para el año seleccionado.",type = "info")
+    shinyalert("Importante!", "A partir de los filtros de Anio y etiqueta DHIME, la gráfica (izquierda) y la tabla (derecha) resumen por Area Operativa los avances de digitacion en DHIME, representado como la diferencia de los porcentajes de digitacion por mes de dos descargas realizadas a la etiqueta seleccionada y para el anio seleccionado.",type = "info")
   })
   
   output$textNN <- renderText({
-    paste("Cantidad de registros en el mes de ",names(mesesB)[mesesB == input$mesB]," del año ",input$anio2," para las últimas dos descargas de la etiqueta ",input$variableX)
+    paste("Cantidad de registros en el mes de ",names(mesesB)[mesesB == input$mesB]," del anio ",input$anio2," para las ultimas dos descargas de la etiqueta ",input$variableX)
   })
   
   
@@ -136,7 +136,7 @@ AOAvances = function(input, output, session) {
   })
   
   output$grafico3 = renderPlotly({
-    graph = plot_ly(VARIACIONES_1(),x = ~mes,y = ~AO01_dif,name = 'AO <b>01</b>',text = ~paste0("Conteo datos penúltima descarga:",AO01_conteoDatosMesAnt,"\n Conteo datos última descarga:",AO01_conteoDatosMesAct),type = 'scatter',mode = 'lines+markers') %>%
+    graph = plot_ly(VARIACIONES_1(),x = ~mes,y = ~AO01_dif,name = 'AO <b>01</b>',text = ~paste0("Conteo datos penúltima descarga:",AO01_conteoDatosMesAnt,"\n Conteo datos ultima descarga:",AO01_conteoDatosMesAct),type = 'scatter',mode = 'lines+markers') %>%
       add_trace(y = ~AO02_dif,name = 'AO <b>02</b>',text = ~paste0("Conteo datos descarga anterior:",AO02_conteoDatosMesAnt,"\n Conteo datos descarga actual:",AO02_conteoDatosMesAct)) %>%
       add_trace(y = ~AO03_dif,name = 'AO <b>03</b>',text = ~paste0("Conteo datos descarga anterior:",AO03_conteoDatosMesAnt,"\n Conteo datos descarga actual:",AO03_conteoDatosMesAct)) %>%
       add_trace(y = ~AO04_dif,name = 'AO <b>04</b>',text = ~paste0("Conteo datos descarga anterior:",AO04_conteoDatosMesAnt,"\n Conteo datos descarga actual:",AO04_conteoDatosMesAct)) %>%
