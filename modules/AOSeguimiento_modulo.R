@@ -15,7 +15,7 @@ AOSeguimientoUI = function(id) {
                                filtroEtiquetasDHIME(ns('variable'), 'ETIQUETA DHIME')
                         ),
                         column(6,
-                               filtroAnios(ns('anio'), 'AÑO')
+                               filtroAnios(ns('anio'), 'ANIO')
                         )
                       ),
                       fluidRow(
@@ -66,10 +66,10 @@ AOSeguimientoUI = function(id) {
                                             )
                                  )
                         ),
-                        tabPanel(strong("Tabla Estaciones con Registros en el Año"),
+                        tabPanel(strong("Tabla Estaciones con Registros en el Anio"),
                                  setDownTable(ns("text5"),ns("tablaAnual"),ns("downloadTablaAnual"))
                         ),
-                        tabPanel(strong("Tabla Estaciones Activas sin Registros en el Año"),
+                        tabPanel(strong("Tabla Estaciones Activas sin Registros en el Anio"),
                                  setDownTable(ns("textNN"),ns("tablaFaltantesAnual"),ns("DownTablaFaltantesAnual"))
                         ),
                         tabPanel(strong("Tabla Anual 2"),
@@ -125,11 +125,11 @@ AOSeguimiento = function(input, output, session) {
   
   
   output$text <- renderText({
-    paste("Cantidad de estaciones por rangos de días de digitación en el ",input$anio," para la etiqueta ", input$variable)
+    paste("Cantidad de estaciones por rangos de dias de digitacion en el ",input$anio," para la etiqueta ", input$variable)
   })
   
   output$text2 <- renderText({
-    paste("Cantidad de estaciones por rangos de días de digitación en ",names(meses)[meses == input$mes]," de ",input$anio," para la etiqueta", input$variable)
+    paste("Cantidad de estaciones por rangos de dias de digitacion en ",names(meses)[meses == input$mes]," de ",input$anio," para la etiqueta", input$variable)
   })
   
   output$text3 <- renderText({
@@ -141,42 +141,42 @@ AOSeguimiento = function(input, output, session) {
   })
   
   output$text5 <- renderText({
-    paste("Cantidad de datos de la etiqueta ",input$variable," y rangos por estación para el ",input$AO," en el ",input$anio)
+    paste("Cantidad de datos de la etiqueta ",input$variable," y rangos por estacion para el ",input$AO," en el ",input$anio)
   })
   
   output$textNN <- renderText({
-    paste("Estaciones Activas sin registros para la etiqueta ",input$variable," en el Área OPerativa ",input$AO," para el ",input$anio)
+    paste("Estaciones Activas sin registros para la etiqueta ",input$variable," en el Area Operativa ",input$AO," para el ",input$anio)
   })
   
   output$text6 <- renderText({
-    paste("Cantidad de datos de la etiqueta ",input$variable," y rangos por estación para el ",input$AO," en ",names(meses)[meses == input$mes]," de ",input$anio)
+    paste("Cantidad de datos de la etiqueta ",input$variable," y rangos por estacion para el ",input$AO," en ",names(meses)[meses == input$mes]," de ",input$anio)
   })
   
   output$text7 <- renderText({
-    paste("Porcentaje de estaciones por cada periodo de digitación de datos de la etiqueta ",input$variable," para el ",input$anio," en el DHIME.")
+    paste("Porcentaje de estaciones por cada periodo de digitacion de datos de la etiqueta ",input$variable," para el ",input$anio," en el DHIME.")
   })
   output$text8 <- renderText({
-    paste("Porcentaje de estaciones por cada periodo de digitación de datos de la etiqueta ",input$variable," en cada mes de ",input$anio," en el DHIME, en el ",input$AO)
+    paste("Porcentaje de estaciones por cada periodo de digitacion de datos de la etiqueta ",input$variable," en cada mes de ",input$anio," en el DHIME, en el ",input$AO)
   })
   output$text9 <- renderText({
-    paste("Cantidad de estaciones por cada periodo de digitación de datos de la etiqueta ",input$variable," para el ",input$anio," en el DHIME.")
+    paste("Cantidad de estaciones por cada periodo de digitacion de datos de la etiqueta ",input$variable," para el ",input$anio," en el DHIME.")
   })
   output$text10 <- renderText({
-    paste("Cantidad de estaciones por cada periodo de digitación de datos de la etiqueta ",input$variable," en cada mes de ",input$anio," en el DHIME, en el ",input$AO)
+    paste("Cantidad de estaciones por cada periodo de digitacion de datos de la etiqueta ",input$variable," en cada mes de ",input$anio," en el DHIME, en el ",input$AO)
   })
   output$text11 <- renderText({
-    paste("Porcentaje de estaciones por cada periodo de digitación de datos de la etiqueta ",input$variable," por año en el DHIME para el ",input$AO)
+    paste("Porcentaje de estaciones por cada periodo de digitacion de datos de la etiqueta ",input$variable," por anio en el DHIME para el ",input$AO)
   })
   
   
   observeEvent(input$preview, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "Las gráficas de barras apiladas indican por año (gráfica izquierda) y por mes (gráfica derecha) la cantidad de estaciones en cada rango de periodo de digitación de la etiqueta seleccionada, agrupados por Área Operativa.\n Están acondicionadas por los filtros de Año, Mes y Etiqueta DHIME.",type = "info")
+    shinyalert("Importante!", "Las gráficas de barras apiladas indican por anio (grafica izquierda) y por mes (grafica derecha) la cantidad de estaciones en cada rango de periodo de digitacion de la etiqueta seleccionada, agrupados por Area Operativa.\n Estan acondicionadas por los filtros de Anio, Mes y Etiqueta DHIME.",type = "info")
   })
   
   observeEvent(input$ayuda2, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir de los filtros de Año, Mes y Etiqueta DHIME, junto con el filtro de Área Operativa, se asocian los mapas y tablas de cantidades y porcentajes correspondientes a las estaciones que hacen parte de los rangos de digitación.\n Estos productos se encuentran a escala Anual (columna izquierda) y Mensual (columna derecha) organizados en pestañas.",type = "info")
+    shinyalert("Importante!", "A partir de los filtros de Anio, Mes y Etiqueta DHIME, junto con el filtro de Area Operativa, se asocian los mapas y tablas de cantidades y porcentajes correspondientes a las estaciones que hacen parte de los rangos de digitacion.\n Estos productos se encuentran a escala Anual (columna izquierda) y Mensual (columna derecha) organizados en pestanas.",type = "info")
   })
   
   ## Se filtra la tabla con la cantidad de estaciones por rangos y por años del 2010 al 2020
