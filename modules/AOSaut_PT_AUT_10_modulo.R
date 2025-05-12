@@ -6,14 +6,14 @@ AOSAUT_PT_AUT_10_UI = function(id) {
   tabPanel(strong("PT_AUT_10"),value = "panel5",
            fluidRow(
              column(4,
-                    filtroV1AreasOperativas(ns("AOSCoompleto2"),"ÁREA OPERATIVA"),
+                    filtroV1AreasOperativas(ns("AOSCoompleto2"),"AREA OPERATIVA"),
                     selectInput(inputId = ns("selecEstacion"),
-                                label = "Seleccione código de la estación de interés",
+                                label = "Seleccione codigo de la estacion de interes",
                                 choices = NULL),
-                    h4(strong("Ubicación de la estación"), align = "center"),
+                    h4(strong("Ubicacion de la estacion"), align = "center"),
                     leafletOutput(ns("mapAut")),
-                    filtroAnios(ns('anio3'), 'AÑO'),
-                    h4("Análisis de cantidad de estaciones por rangos de días de digitación de datos anual", align = "center"),
+                    filtroAnios(ns('anio3'), 'ANIO'),
+                    h4("Analisis de cantidad de estaciones por rangos de dias de digitacion de datos anual", align = "center"),
                     plotlyOutput(ns('graficoPrecAut'))
              ),
              column(8,
@@ -23,16 +23,16 @@ AOSAUT_PT_AUT_10_UI = function(id) {
                                tabsetPanel(
                                  tabPanel(strong("Conteos"),
                                           h5(textOutput(ns("data3")), align = "center"),
-                                          setDownTable("Cantidad de días con valores de PT_AUT_10 en DHIME por año",ns("tabla8"),ns("downloadTabla8"),titleStatic = TRUE)
+                                          setDownTable("Cantidad de dias con valores de PT_AUT_10 en DHIME por anio",ns("tabla8"),ns("downloadTabla8"),titleStatic = TRUE)
                                  ),
                                  tabPanel(strong("Porcentajes"),
-                                          setDownTable("Porcentaje de días con valores de PT_AUT_10 en DHIME por año",ns("tabla88"),ns("downloadTabla88"),titleStatic = TRUE)
+                                          setDownTable("Porcentaje de dias con valores de PT_AUT_10 en DHIME por anio",ns("tabla88"),ns("downloadTabla88"),titleStatic = TRUE)
                                  )
                                )
                       ),
                       tabPanel(strong("TABLA MENSUAL"),
                                filtroAnios(ns('anio5'), 'AÑO'),
-                               setDownTable("Cantidad de días con valores de PT_AUT_10 en DHIME por mes",ns("tabla9"),ns("downloadTabla9"),titleStatic = TRUE)
+                               setDownTable("Cantidad de dias con valores de PT_AUT_10 en DHIME por mes",ns("tabla9"),ns("downloadTabla9"),titleStatic = TRUE)
                       )
                     )             )
            )
@@ -48,7 +48,7 @@ AOSAUT_PT_AUT_10 = function(input, output, session) {
   })
   
   observe({
-    updateSelectInput(session, inputId = "selecEstacion",label = "Seleccione código de la estación de interés", 
+    updateSelectInput(session, inputId = "selecEstacion",label = "Seleccione codigo de la estacion de interes", 
                       choices = c(listadoEstacionesB()$estacion))
   })
   
