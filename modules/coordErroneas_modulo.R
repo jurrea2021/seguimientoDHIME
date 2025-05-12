@@ -15,12 +15,12 @@ coordErroneasUI = function(id) {
                     verbatimTextOutput(ns("TableText3"))
              ),
              column(7,
-                    p(strong("La tabla enlista las estaciones con diferencias de coordenadas en los catálogos de los años 2014 y 2021. Además de la información básica de cada estación en estas versiones de 
-                               catálogos, los últimos campos describen para cada estación la distancia en metros que hay entre sus distintas versiones de ubicaciones así como las orientaciones entre las mismas.") ,style="text-align:justify;color:black;background-color:#C7C9E8;padding:15px;border-radius:10px")
+                    p(strong("La tabla enlista las estaciones con diferencias de coordenadas en los catalogos de los años 2014 y 2021. Además de la informacion basica de cada estacion en estas versiones de 
+                               catalogos, los ultimos campos describen para cada estacion la distancia en metros que hay entre sus distintas versiones de ubicaciones asi como las orientaciones entre las mismas.") ,style="text-align:justify;color:black;background-color:#C7C9E8;padding:15px;border-radius:10px")
              )
            ),
            tabsetPanel(
-             tabPanel(strong("Catálogo estaciones con coordenadas erróneas"),
+             tabPanel(strong("Catalogo estaciones con coordenadas erroneas"),
                       tabPanel(
                         strong("Tabla"),
                         box(div(dataTableOutput(ns("tablaCoordsMalas")),style = "font-size:70%"),width = 12),
@@ -40,22 +40,22 @@ coordErroneasUI = function(id) {
                       fluidRow(
                         column(5,
                                br(),
-                               p(strong("A partir del filtro de códigos de estaciones que está encima del mapa, el mapa se actualiza con la estación seleccionada. Aparecerán dos ubicaciones asociadas a la estación 
-                                   para el Catálogo del 2014 (",shiny::span(strong("AZUL"), style = "color:blue"),") y el Catálogo del 2021 (",shiny::span(strong("ROJO"), style = "color:red"),"). Al pasar el cursor del mouse sobre 
-                                   el lienzo del mapa, aparecerá en la esquina superior derecha del mapa las coordenadas del mapa en donde se encuentra el mouse sin embargo, con Ctrl + Click  también obtendrá
+                               p(strong("A partir del filtro de codigos de estaciones que esta encima del mapa, el mapa se actualiza con la estacion seleccionada. Apareceran dos ubicaciones asociadas a la estacion 
+                                   para el Catalogo del 2014 (",shiny::span(strong("AZUL"), style = "color:blue"),") y el Catalogo del 2021 (",shiny::span(strong("ROJO"), style = "color:red"),"). Al pasar el cursor del mouse sobre 
+                                   el lienzo del mapa, aparecera en la esquina superior derecha del mapa las coordenadas del mapa en donde se encuentra el mouse sin embargo, con Ctrl + Click  tambien obtendra
                                    las coordenadas en el portapapeles para que pegue el texto de las coordenadas en otro lado.") ,style="text-align:justify;color:black;background-color:#C7C9E8;padding:10px;border-radius:10px"),
-                               p(strong("El mapa también presenta herramientas relacionadas con la medición de distancias (Esquina superior Derecha), y dibujo de polígonos en el mapa (Izquierda) junto con un Menú 
-                                          para prender o apagar las capas y los mapas base (Google Maps e Imágenes de Satélite) que están en la Derecha del mapa. ¡¡ Ayudará para la toma de decisiones al momento de 
+                               p(strong("El mapa tambien presenta herramientas relacionadas con la medicion de distancias (Esquina superior Derecha), y dibujo de poligonos en el mapa (Izquierda) junto con un Menu 
+                                          para prender o apagar las capas y los mapas base (Google Maps e Imagenes de Satélite) que están en la Derecha del mapa. ¡¡ Ayudara para la toma de decisiones al momento de 
                                           escoger unas adecuadas coordenadas!!") ,style="text-align:justify;color:black;background-color:#C7C9E8;padding:10px;border-radius:10px"),
-                               p(strong("Finalmente, puede informar al grupo de Planeación Operativa o por Mesa de Ayuda la propuesta de nuevas coordenadas para la estación de interés, así se evaluará desde
-                                          el grupo y se actualizará el Catálogo de Estaciones del IDEAM del 2021 con esas nuevas coordenadas.") ,style="text-align:justify;color:black;background-color:#C7C9E8;padding:10px;border-radius:10px")
+                               p(strong("Finalmente, puede informar al grupo de Planeacion Operativa o por Mesa de Ayuda la propuesta de nuevas coordenadas para la estacion de interes, asi se evaluara desde
+                                          el grupo y se actualizara el Catalogo de Estaciones del IDEAM del 2021 con esas nuevas coordenadas.") ,style="text-align:justify;color:black;background-color:#C7C9E8;padding:10px;border-radius:10px")
                         ),
                         column(7,
                                fluidRow(
                                  column(4),
                                  column(4,
                                         selectInput(inputId = ns("selEstacionErroneas"),
-                                                    label = "Seleccione estación",
+                                                    label = "Seleccione estacion",
                                                     choices = NULL)
                                  ),
                                  column(2),
@@ -76,12 +76,12 @@ coordErroneas = function(input, output, session) {
   
   observeEvent(input$ayuda28, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!","Con el filtro de 'Área Operativa' se puede depurar la tabla con las estaciones con probables coordenadas erróneas del Área Operativa de interés. A la derecha se encuentra un contador de estaciones activas, suspendidas y en mantenimiento",type = "info")
+    shinyalert("Importante!","Con el filtro de 'Area Operativa' se puede depurar la tabla con las estaciones con probables coordenadas erroneas del Area Operativa de interes. A la derecha se encuentra un contador de estaciones activas, suspendidas y en mantenimiento",type = "info")
   })
   
   observeEvent(input$ayuda29, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!","El filtro de 'Código' se actualiza de acuerdo al filtro 'Área Operativa' que se encuentra arriba.",type = "info")
+    shinyalert("Importante!","El filtro de 'Codigo' se actualiza de acuerdo al filtro 'Area Operativa' que se encuentra arriba.",type = "info")
   })
   
   coordsMalas = reactive({
