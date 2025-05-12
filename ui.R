@@ -35,7 +35,7 @@ shinyUI(fluidPage(
              fluidRow(
                column(1),
                column(10,
-                      p(strong("Análisis de digitación de valores en DHIME por las Áreas Operativas"), style = "font-size:29px;text-align : center")
+                      p(strong("Analisis de digitacion de valores en DHIME por las Areas Operativas"), style = "font-size:29px;text-align : center")
                       ),
                column(1,
                       botonAyuda("principal")
@@ -43,33 +43,33 @@ shinyUI(fluidPage(
              ),
              br(),
              fluidRow(
-               p("La herramienta propuesta facilita el análisis estadístico descriptivo por medio de gráficas, tablas y mapas para algunas de las etiquetas básicas de DHIME más representativas:
-                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el año",strong(" 2014")," hasta el", strong(" 9 de mayo de 2025"),". 
-                 El Catálogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la página del Instituto el ", strong("19 de febrero de 2025"),". La herramienta se compone de 7 módulos lo cuáles se explican a continuación:",style="text-align:justify"),
+               p("La herramienta propuesta facilita el analisis estadistico descriptivo por medio de grAficas, tablas y mapas para algunas de las etiquetas basicas de DHIME mAs representativas:
+                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el anio",strong(" 2014")," hasta el", strong(" 9 de mayo de 2025"),". 
+                 El Catalogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la pagina del Instituto el ", strong("19 de febrero de 2025"),". La herramienta se compone de 7 modulos lo cuales se explican a continuacion:",style="text-align:justify"),
                br()
                # p("La herramienta se compone de 5 módulos lo cuáles se explican a continuación:")
              ),
              fluidRow(
                column(4,
-                      div(actionButton('jumpToP1',strong('Seguimiento Áreas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
+                      div(actionButton('jumpToP1',strong('Seguimiento Areas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Seguimiento Áreas Operativas: "),"A través de este módulo, se puede conocer el estado de digitación de las estaciones de cada Área Operativa del IDEAM. A partir de unos rangos de digitación propuestos, 
-                        en escala anual y mensual se agrupan las estaciones, así cómo gráficas de barras apiladas y mapas, junto con tablas que resumen la cantidad de datos por rangos para cada estación asi,
-                        cómo el porcentaje de estaciones y cantidad que se encuentra en cada rango propuesto.",style="text-align:justify")
+                      p(strong("Modulo Seguimiento Areas Operativas: "),"A traves de este modulo, se puede conocer el estado de digitacion de las estaciones de cada Area Operativa del IDEAM. A partir de unos rangos de digitacion propuestos, 
+                        en escala anual y mensual se agrupan las estaciones, asi como graficas de barras apiladas y mapas, junto con tablas que resumen la cantidad de datos por rangos para cada estacion asi,
+                        como el porcentaje de estaciones y cantidad que se encuentra en cada rango propuesto.",style="text-align:justify")
                       ),
                column(4,
-                      div(actionButton('jumpToP2',strong('Porcentaje digitación Áreas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
+                      div(actionButton('jumpToP2',strong('Porcentaje digitacion Areas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Porcentaje digitación Áreas Operativas: "),"A través de este módulo, se puede conocer el porcentaje de digitación de valores de las etiquetas de DHIME básicas por Área Operativa.
-                        Además, se resumen en tablas las metas mensuales y anuales por Área Operativa asociadas con las estaciones con registros en el periodo de tiempo
+                      p(strong("Modulo Porcentaje digitacion Areas Operativas: "),"A traves de este modulo, se puede conocer el porcentaje de digitacion de valores de las etiquetas de DHIME basicas por Area Operativa.
+                        Ademas, se resumen en tablas las metas mensuales y anuales por Area Operativa asociadas con las estaciones con registros en el periodo de tiempo
                         de estudio y las estaciones que son reportadas en Intranet por algunas Áreas Operativas.",style="text-align:justify")
                       ),
                column(4,
                       div(actionButton('jumpToP3',strong('Avances Áreas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Avances Áreas Operativas: "),"A través de este módulo, se puede apreciar los avances de digitación de algunas etiquetas de DHIME por parte de las Áreas Operativas.
-                         A partir de la descarga realizada el ",strong("6 de mayo de 2025")," y la última descarga del ", strong("9 de mayo de 2025")," se calculan diferencias que 
-                         permiten asociar el estado de avance por cada Área Operativa.",style="text-align:justify")
+                      p(strong("Modulo Avances Areas Operativas: "),"A traves de este modulo, se puede apreciar los avances de digitacion de algunas etiquetas de DHIME por parte de las Areas Operativas.
+                         A partir de la descarga realizada el ",strong("6 de mayo de 2025")," y la ultima descarga del ", strong("9 de mayo de 2025")," se calculan diferencias que 
+                         permiten asociar el estado de avance por cada Area Operativa.",style="text-align:justify")
                       )
              ),
              # br(),
@@ -77,20 +77,20 @@ shinyUI(fluidPage(
                column(4,
                       div(actionButton('jumpToP4',strong('Sensores Convencionales'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Sensores Convencionales: "),"A través de este módulo, se pueden realizar consultas de información de ubicación, cantidad de datos mensual y anual 
-                         de una estación en partícular con etiquetas de DHIME consideradas de estaciones convencionales." ,style="text-align:justify")
+                      p(strong("Modulo Sensores Convencionales: "),"A traves de este modulo, se pueden realizar consultas de informacion de ubicacion, cantidad de datos mensual y anual 
+                         de una estacion en partícular con etiquetas de DHIME consideradas de estaciones convencionales." ,style="text-align:justify")
 
                       ),
                column(4,
-                      div(actionButton('jumpToP5',strong('Sensores Automáticos'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
+                      div(actionButton('jumpToP5',strong('Sensores Automaticos'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Sensores Automáticos: "),"A través de este módulo, se pueden realizar consultas de información de ubicación, cantidad de datos mensual y anual
-                         de una estación en partícular con etiquetas de DHIME consideradas de estaciones automáticas (las etiquetas disponibles en éste módulo son PT_AUT_10 y NV_AUT_60)." ,style="text-align:justify")
+                      p(strong("Modulo Sensores Automaticos: "),"A traves de este modulo, se pueden realizar consultas de informacion de ubicacion, cantidad de datos mensual y anual
+                         de una estacion en partícular con etiquetas de DHIME consideradas de estaciones automaticas (las etiquetas disponibles en este modulo son PT_AUT_10 y NV_AUT_60)." ,style="text-align:justify")
                       ),
                column(4,
-                      div(actionButton('jumpToP6',strong('Series Históricas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
+                      div(actionButton('jumpToP6',strong('Series Historicas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Series Históricas: "),"A través de este módulo, se puede explorar por departamento y por variable, productos relacionados con las series históricas y ubicaciones de estaciones categorizadas por la longitud de series. Información actualizada hasta el mes de JULIO DE 2021." ,style="text-align:justify")
+                      p(strong("Modulo Series Historicas: "),"A traves de este modulo, se puede explorar por departamento y por variable, productos relacionados con las series historicas y ubicaciones de estaciones categorizadas por la longitud de series. Informacion actualizada hasta el mes de JULIO DE 2021." ,style="text-align:justify")
                       )
              ),
              fluidRow(
@@ -98,26 +98,26 @@ shinyUI(fluidPage(
                column(4,
                       div(actionButton('jumpToP7',strong('Coordenadas Erróneas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Estaciones con Coordenadas Erróneas: "),"A través de este módulo, se identifican las estaciones con coordenadas erróneas, lo cual fueron comparadas con las estaciones del catálogo del año 2014. Se dispone de un mapa para que el usuario tome una decisión para decidir las coordenadas apropiadas para cada estación e informar al grupo de Planeación Operativa" ,style="text-align:justify")
+                      p(strong("Modulo Estaciones con Coordenadas Erroneas: "),"A través de este módulo, se identifican las estaciones con coordenadas erroneas, lo cual fueron comparadas con las estaciones del catalogo del anio 2014. Se dispone de un mapa para que el usuario tome una decision para decidir las coordenadas apropiadas para cada estacion e informar al grupo de Planeacion Operativa" ,style="text-align:justify")
                      ),
                column(4,
                       div(actionButton('jumpToP10',strong('Series Etiquetas DHIME'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
-                      p(strong("Módulo Series Etiquetas DHIME: "),"A través de este módulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("3 de febrero de 2025"),"." ,style="text-align:justify")
+                      p(strong("Modulo Series Etiquetas DHIME: "),"A traves de este modulo, se enlistan las estaciones que tienen registradas etiquetas de DHIME con datos actualizados al ", strong("3 de febrero de 2025"),"." ,style="text-align:justify")
                ),
                column(2)
              ),
              fluidRow(
                hr(),
-               p(em("Desarrollado por:"),em("Julián David Urrea Urrego (Ingeniero Ambiental | Especialista SIG)"),style="text-align:center; font-family: times"),
-               p(em("CTO. 260 - 2024 | IDEAM-Planeación Operativa"),style="text-align:center; font-family: times")
+               p(em("Desarrollado por:"),em("Julian David Urrea Urrego (Ingeniero Ambiental | Especialista SIG)"),style="text-align:center; font-family: times"),
+               p(em("CTO. 044 - 2025 | IDEAM-Planeacion Operativa"),style="text-align:center; font-family: times")
                
              )
              ),
     
 
     
-    navbarMenu(strong("Áreas Operativas"),
+    navbarMenu(strong("Areas Operativas"),
                AOSeguimientoUI("modulo_AOSeguimiento"),
                AOPorcentajesUI("modulo_AOPorcentajes"),
                AOAvancesUI("modulo_AOAvances")
@@ -126,7 +126,7 @@ shinyUI(fluidPage(
                AOSensoresConvencionalesUI("modulo_AOSensoresConvencionales"),
                AOSConvencionalesTimeSeriesUI("modulo_AOSensoresConvencionalesTS")
                ),
-    navbarMenu(strong("Sensores Automáticos"),
+    navbarMenu(strong("Sensores Automaticos"),
                AOSAUT_PT_AUT_10_UI("modulo_AOSAUT_PT_AUT_10"),
                AOSAUT_NV_AUT_60_UI("modulo_AOSAUT_NV_AUT_60")
       
@@ -146,7 +146,7 @@ shinyUI(fluidPage(
   ##############Footer----    
   ###############################################.
   #Copyright warning
-  tags$footer( "© Instituto de Hidrología, Meteorología y Estudios Ambientales (Grupo de Planeación Operativa) v2.0 2024", 
+  tags$footer( "© Instituto de Hidrologia, Meteorologia y Estudios Ambientales (Grupo de Planeacion Operativa) v3.0 2025", 
               style = "
               position:fixed;
               text-align:center;
