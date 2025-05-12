@@ -3,13 +3,13 @@ Sys.setlocale(locale = "Spanish")
 seriesHistoricasUI = function(id) {
   ns <- NS(id)
   
-  tabPanel(strong("Series Históricas"),value = "panel6",
+  tabPanel(strong("Series Historicas"),value = "panel6",
            dashboardPage(
              dashboardHeader(disable = T),
              dashboardSidebar(
                botonAyuda(ns("ayuda23")),
                selectInput(inputId = ns("seleccionarDpto"),
-                           label = "Seleccione el departamento de interés",
+                           label = "Seleccione el departamento de interes",
                            choices = NULL),
                filtroEtiquetasDHIME(ns('etiq'),'ETIQUETA DHIME'),
                sliderInput(ns("porcComplet"),"Porcentaje de completitud series",
@@ -61,11 +61,11 @@ seriesHistoricas = function(input, output, session) {
   
   observeEvent(input$ayuda23, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!","Con los filtros de departamento y de etiqueta DHIME, se filtra de la pestaña de ´Dashboard´, el mapa de ubicación de las estaciones asi como la gráfica de distribución de las estaciones agrupadas por subregiones del departamento y/o por municipios del departamento. Temporalmente la gráfica de series de las estaciones dle conjunto se encuentra estática. Finalmente, debajo de los filtros se encuentra una barra para filtrar las estaciones por porcentaje de completitud de sus series.",type = "info")
+    shinyalert("Importante!","Con los filtros de departamento y de etiqueta DHIME, se filtra de la pestaña de ´Dashboard´, el mapa de ubicacion de las estaciones asi como la grafica de distribucion de las estaciones agrupadas por subregiones del departamento y/o por municipios del departamento. Temporalmente la grafica de series de las estaciones dle conjunto se encuentra estatica. Finalmente, debajo de los filtros se encuentra una barra para filtrar las estaciones por porcentaje de completitud de sus series.",type = "info")
   })
   
   observe({
-    updateSelectInput(session, inputId = "seleccionarDpto",label = "Seleccione el departamento de interés", 
+    updateSelectInput(session, inputId = "seleccionarDpto",label = "Seleccione el departamento de interes", 
                       choices = unique(c(analisisSeries$DEPARTA)))
   })
   
@@ -150,7 +150,7 @@ seriesHistoricas = function(input, output, session) {
                                     "\n Longitud serie : ",seriesHist2$lngtdSr," Años\nPorcentaje Completitud: ",seriesHist2$porcTtl,"%"),
                      width =550, height = 400) %>%
         layout(#title = list(text = 'Comportamiento de longitudes de serie \nde estaciones activas\ndepartamento de Valle del Cauca',y = 1.6), 
-          yaxis = list(title = '</b> Longitud de series (Años) </b>'), xaxis = list(title = '</b> Subregión </b>'),showlegend = FALSE)
+          yaxis = list(title = '</b> Longitud de series (Anios) </b>'), xaxis = list(title = '</b> Subregión </b>'),showlegend = FALSE)
       fig
     }
   })
