@@ -6,22 +6,22 @@ AOSensoresConvencionalesUI = function(id) {
   
   tabPanel(strong(" Sensores Convencionales "),value = "panel4",
            tabsetPanel(
-             tabPanel(strong("Consulta por Estación"),
+             tabPanel(strong("Consulta por Estacion"),
                       fluidRow(
                         column(4,
                                downloadButton(ns("report"), "Generate report"),
                                fluidRow(
                                  column(9,
-                                        filtroV1AreasOperativas(ns("AOSCoompleto1"),"ÁREA OPERATIVA"),
+                                        filtroV1AreasOperativas(ns("AOSCoompleto1"),"AREA OPERATIVA"),
                                         selectInput(inputId = ns("selEstacion"),
-                                                    label = "Seleccione código de la estación de interés",
+                                                    label = "Seleccione codigo de la estacion de interes",
                                                     choices = NULL)
                                  ),
                                  column(1,
                                         botonAyuda(ns("ayuda8"))
                                  )
                                ),
-                               h4(strong("Ubicación de la estación"), align = "center"),
+                               h4(strong("Ubicacion de la estacion"), align = "center"),
                                leafletOutput(ns("map"))
                         ),
                         column(8,
@@ -32,15 +32,15 @@ AOSensoresConvencionalesUI = function(id) {
                                           br(),
                                           tabsetPanel(
                                             tabPanel(strong("Conteos"),
-                                                     setDownTable("Cantidad de datos o días de la variable de interés en DHIME por año",ns("tabla4"),ns("downloadTabla4"),titleStatic = TRUE)
+                                                     setDownTable("Cantidad de datos o dias de la variable de interes en DHIME por anio",ns("tabla4"),ns("downloadTabla4"),titleStatic = TRUE)
                                             ),
                                             tabPanel(strong("Porcentajes"),
-                                                     setDownTable("Cantidad de porcentajes de datos o días de la variable de interés en DHIME por año",ns("tabla45"),ns("downloadTabla45"),titleStatic = TRUE)
+                                                     setDownTable("Cantidad de porcentajes de datos o dias de la variable de interes en DHIME por anio",ns("tabla45"),ns("downloadTabla45"),titleStatic = TRUE)
                                             )
                                           )                                 ),
                                  tabPanel(strong("Tabla Mensual"),
-                                          filtroAnios(ns('anio4'), 'AÑO'),
-                                          setDownTable("Cantidad de datos o días de la variable de interés en DHIME por mes",ns("tablaY"),ns("downloadTablaY"),titleStatic = TRUE)
+                                          filtroAnios(ns('anio4'), 'ANIO'),
+                                          setDownTable("Cantidad de datos o días de la variable de interes en DHIME por mes",ns("tablaY"),ns("downloadTablaY"),titleStatic = TRUE)
                                  )
                                )
                                # plotOutput('graficoB')
@@ -61,7 +61,7 @@ AOSensoresConvencionalesUI = function(id) {
                         ),
                         column(2,
                                br(),
-                               filtroAnios(ns('anio_ModGeneral'), 'AÑO')
+                               filtroAnios(ns('anio_ModGeneral'), 'ANIO')
                         ),
                         column(3,
                                p(strong("Cantidad Estaciones:")),
@@ -105,13 +105,13 @@ AOSensoresConvencionalesUI = function(id) {
 AOSensoresConvencionales = function(input, output, session) {
   observeEvent(input$ayuda8, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!", "A partir del filtro de Estación, se selecciona el código de la estación de interés y se ajusta el mapa de la izquierda con la ubicación de la estación y la Tabla Anual de la derecha con la cantidad de registros por año para cada etiqueta de DHIME disponible en la estacion.\n La tabla mensual que se encuentra en la segunda pestaña a la derecha, muestra la misma dinámica que la primera tabla pero por mes y se corresponde con el filtro de Mes.",type = "info")
+    shinyalert("Importante!", "A partir del filtro de Estacion, se selecciona el codigo de la estacion de interes y se ajusta el mapa de la izquierda con la ubicacion de la estacion y la Tabla Anual de la derecha con la cantidad de registros por anio para cada etiqueta de DHIME disponible en la estacion.\n La tabla mensual que se encuentra en la segunda pestana a la derecha, muestra la misma dinamica que la primera tabla pero por mes y se corresponde con el filtro de Mes.",type = "info")
   })
   
   
   observeEvent(input$ayuda30, {
     # Show a modal when the button is pressed
-    shinyalert("Importante!","La tabla contiene información de la cantidad de datos por mes para cada etiqueta de DHIME y para cada año desde el año 2010. Con los filtros de 'Área Operativa', 'Etiqueta DHIME', y 'Año' se ajusta el contenido de la tabla al momento de su visualización y de su descarga con el botón 'Download'.",type = "info")
+    shinyalert("Importante!","La tabla contiene informacion de la cantidad de datos por mes para cada etiqueta de DHIME y para cada anio desde el año 2010. Con los filtros de 'Area Operativa', 'Etiqueta DHIME', y 'Anio' se ajusta el contenido de la tabla al momento de su visualizacion y de su descarga con el boton 'Download'.",type = "info")
   })
   
   listadoEstaciones = reactive({
@@ -122,7 +122,7 @@ AOSensoresConvencionales = function(input, output, session) {
   })
   
   observe({
-    updateSelectInput(session, inputId = "selEstacion",label = "Seleccione código de la estación de interés", 
+    updateSelectInput(session, inputId = "selEstacion",label = "Seleccione codigo de la estacion de interes", 
                       choices = c(listadoEstaciones()$estacion))
   })
   
