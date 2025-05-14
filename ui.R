@@ -44,7 +44,7 @@ shinyUI(fluidPage(
              br(),
              fluidRow(
                p("La herramienta propuesta facilita el analisis estadistico descriptivo por medio de grAficas, tablas y mapas para algunas de las etiquetas basicas de DHIME mAs representativas:
-                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el anio",strong(" 2014")," hasta el", strong(" 9 de mayo de 2025"),". 
+                 PTPM_CON, PTPG_CON, TMX_CON, TMN_CON, TSSM_CON, THSM_CON, TSSM_MEDIA_D, BSHG_CON, EVTE_CON, NIVEL_H, Q_MEDIA_D, RCAM_CON, NVLM_CON, CAUDAL_H, PT_AUT_10 y NV_AUT_60.","Los datos fueron descargados de las plataformas de DHIME, con periodos de series de tiempo que van desde el anio",strong(" 2014")," hasta el", strong(" 12 de mayo de 2025"),". 
                  El Catalogo Nacional de estaciones del IDEAM utilizado en la herramienta fue descargado de la pagina del Instituto el ", strong("19 de febrero de 2025"),". La herramienta se compone de 7 modulos lo cuales se explican a continuacion:",style="text-align:justify"),
                br()
                # p("La herramienta se compone de 5 módulos lo cuáles se explican a continuación:")
@@ -68,7 +68,7 @@ shinyUI(fluidPage(
                       div(actionButton('jumpToP3',strong('Avances Áreas Operativas'),style="color: white; background-color: #2C3E50; border-color: #18BC9C"),align ="center"),
                       br(),
                       p(strong("Modulo Avances Areas Operativas: "),"A traves de este modulo, se puede apreciar los avances de digitacion de algunas etiquetas de DHIME por parte de las Areas Operativas.
-                         A partir de la descarga realizada el ",strong("6 de mayo de 2025")," y la ultima descarga del ", strong("9 de mayo de 2025")," se calculan diferencias que 
+                         A partir de la descarga realizada el ",strong("9 de mayo de 2025")," y la ultima descarga del ", strong("12 de mayo de 2025")," se calculan diferencias que 
                          permiten asociar el estado de avance por cada Area Operativa.",style="text-align:justify")
                       )
              ),
