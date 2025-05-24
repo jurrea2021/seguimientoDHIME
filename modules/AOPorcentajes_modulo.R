@@ -109,7 +109,7 @@ AOPorcentajes = function(input, output, session) {
     paste("Meses procesados por Area Operativa a escala mensual con las estaciones que tuvieron registros de ",input$variablePorc," en el anio ",input$anioPorc)
   })
   output$text16 <- renderText({
-    paste("Meses procesados por Area Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10) para la etiqueta ",input$variablePorc," en el anio ",input$anioPorc)
+    paste("Meses procesados por Area Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO06,AO07,AO10) para la etiqueta ",input$variablePorc," en el anio ",input$anioPorc)
   })
   
   PORCENTAJES = reactive({
