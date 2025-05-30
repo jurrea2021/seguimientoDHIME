@@ -58,16 +58,16 @@ AOPorcentajesUI = function(id) {
              column(1),
              column(10,
                     tabsetPanel(
-                      tabPanel("Tabla 1",
-                               h4(strong(textOutput(ns("text15"))), align = "center"),
-                               # h4("Meses procesados por Área Operativa a escala mensual con las estaciones que tuvieron registros en el año", align = "center"),
-                               div(dataTableOutput(ns("tablaMetaMes")),style = "font-size:70%")
-                      ),
                       tabPanel("Tabla 2",
                                h4(strong(textOutput(ns("text16"))), align = "center"),
                                # h4("Meses procesados por Área Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO09,AO10)", align = "center"),
                                div(dataTableOutput(ns("tablaMetaBetaMes")),style = "font-size:70%")
-                      )                      
+                      ),
+                      tabPanel("Tabla 1",
+                               h4(strong(textOutput(ns("text15"))), align = "center"),
+                               # h4("Meses procesados por Área Operativa a escala mensual con las estaciones que tuvieron registros en el año", align = "center"),
+                               div(dataTableOutput(ns("tablaMetaMes")),style = "font-size:70%")
+                      )                    
                     )
              ),
              column(1)
@@ -103,13 +103,13 @@ AOPorcentajes = function(input, output, session) {
     paste("Metas anuales por area Operativa con las estaciones que tuvieron registros de ",input$variablePorc,"  en el anio ",input$anioPorc)
   })
   output$text14 <- renderText({
-    paste("Metas anuales por Area Operativa con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO06,AO07,AO10) para la etiqueta ",input$variablePorc,"  en el anio ",input$anioPorc)
+    paste("Metas anuales por Area Operativa con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO06,AO07,AO10,AO11) para la etiqueta ",input$variablePorc,"  en el anio ",input$anioPorc)
   })
   output$text15 <- renderText({
     paste("Meses procesados por Area Operativa a escala mensual con las estaciones que tuvieron registros de ",input$variablePorc," en el anio ",input$anioPorc)
   })
   output$text16 <- renderText({
-    paste("Meses procesados por Area Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO06,AO07,AO10) para la etiqueta ",input$variablePorc," en el anio ",input$anioPorc)
+    paste("Meses procesados por Area Operativa a escala mensual con las estaciones reportadas en ORFEO (AO01,AO02,AO03,AO04,AO06,AO07,AO10,AO11) para la etiqueta ",input$variablePorc," en el anio ",input$anioPorc)
   })
   
   PORCENTAJES = reactive({
